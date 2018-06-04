@@ -20,14 +20,15 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico">
-        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico_v0.1"/>
-        <rdfs:comment xml:lang="es">Este vocabulario se utiliza para la descripción del dominio de la infraestructura de los medios de transporte. Esta ontología reutliza elementos de otras ontologías como la ontología de transportes Naptan y una ontología sobre unidades territoriales</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico_v0.2"/>
         <dc:creator xml:lang="es">María Jesús Fernández Ruíz (Ayuntamiento de Zaragoza)</dc:creator>
         <rdfs:comment xml:lang="es">Ontología sobre infraestructuras de transporte</rdfs:comment>
         <dc:creator xml:lang="es">Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid, and LocaliData)</dc:creator>
         <rdfs:label xml:lang="es">Transporte Público</rdfs:label>
         <dcterms:issued xml:lang="es">2014-04-29</dcterms:issued>
         <dc:creator xml:lang="es">Rodrigo Medrano Calderón (Escuela Técnica Superior de Ingenieros Informáticos)</dc:creator>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-04</dcterms:modified>
+        <owl:priorVersion xml:lang="es">0.1</owl:priorVersion>
         <vann:preferredNamespaceUri>http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#</vann:preferredNamespaceUri>
         <dc:identifier xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico</dc:identifier>
         <dcterms:hasFormat xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.owl</dcterms:hasFormat>
@@ -37,6 +38,16 @@
         <dc:title xml:lang="es">Vocabulario para la representación de datos de la infraestructura de medios de transporte</dc:title>
         <dc:creator xml:lang="es">Luis Criado (CRTM)</dc:creator>
         <dc:creator xml:lang="es">José María Díez (Ayuntamiento de Burgos)</dc:creator>
+        <rdfs:comment xml:lang="es">Este vocabulario se utiliza para la descripción del dominio de la infraestructura de los medios de transporte. Esta ontología reutliza elementos de otras ontologías como la ontología de transportes Naptan.</rdfs:comment>
+        <owl:versionInfo xml:lang="es">En esta versión se han agregado las siguientes clases:
+- Operador 
+- ZonaTarifaria
+
+Además se incluyeron las siguientes propiedades:
+- operador 
+- coronaTarifaria
+
+Se ha quitado de la descripción de la ontología lo mencionado en la versión anterior en la que se mencionaba que se reutilizaba términos de una ontología sobre unidades territoriales.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -85,6 +96,12 @@
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
     
 
 
@@ -1036,6 +1053,17 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria">
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria"/>
+        <rdfs:comment xml:lang="es">La parada del medio de transporte pertenece a una zona tarifaria.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:label xml:lang="es">corona tarifaria</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada">
@@ -1076,6 +1104,17 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propiedad inversa de tiene parada.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
         <rdfs:label xml:lang="es">Línea a la que pertenece una parada</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador">
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador"/>
+        <rdfs:comment xml:lang="es">El medio de transporte es gestionado por determinado operador.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:label xml:lang="es">operador</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2150,6 +2189,17 @@
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador">
+        <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:comment xml:lang="es">Operador de los medios de transporte</rdfs:comment>
+        <rdfs:comment xml:lang="es">Operador de los medios de transporte.</rdfs:comment>
+        <rdfs:label xml:lang="es">Operador</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias">
@@ -2209,6 +2259,16 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tipo de parada de autobús</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
         <rdfs:label xml:lang="es">Poste</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria">
+        <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
+        <rdfs:comment xml:lang="es">Zona que permite definir la tarifa del sistema de transporte.</rdfs:comment>
+        <rdfs:label xml:lang="es">Zona Tarifaria</rdfs:label>
     </owl:Class>
     
 
