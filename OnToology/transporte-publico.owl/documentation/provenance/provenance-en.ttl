@@ -1,0 +1,15 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico_v0.2> a prov:Entity;
+	 dc:title "Vocabulario para la representación de datos de la infraestructura de medios de transporte";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Javier Chamorro (CRTM)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "José María Díez (Ayuntamiento de Burgos)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Luis Criado (CRTM)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "María Jesús Fernández Ruíz (Ayuntamiento de Zaragoza)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid, and LocaliData)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Rodrigo Medrano Calderón (Escuela Técnica Superior de Ingenieros Informáticos)".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <0.1>;
+	 prov:wasGeneratedAt "2018-06-04";
+.
