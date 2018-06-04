@@ -1,0 +1,1795 @@
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> rdf:type owl:Ontology ;
+                                                                              owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico_v0.2> ;
+                                                                              <http://purl.org/dc/elements/1.1/creator> "Javier Chamorro (CRTM)"@es ,
+                                                                                                                        "José María Díez (Ayuntamiento de Burgos)"@es ,
+                                                                                                                        "Luis Criado (CRTM)"@es ,
+                                                                                                                        "María Jesús Fernández Ruíz (Ayuntamiento de Zaragoza)"@es ,
+                                                                                                                        "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid, and LocaliData)"@es ,
+                                                                                                                        "Rodrigo Medrano Calderón (Escuela Técnica Superior de Ingenieros Informáticos)"@es ;
+                                                                              <http://purl.org/dc/elements/1.1/date> "2014-04-29"^^xsd:dateTime ;
+                                                                              <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"@es ;
+                                                                              <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de datos de la infraestructura de medios de transporte"@es ;
+                                                                              <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.html"@es ,
+                                                                                                                   "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.owl"@es ;
+                                                                              <http://purl.org/dc/terms/issued> "2014-04-29"@es ;
+                                                                              <http://purl.org/dc/terms/modified> "2018-06-04"^^xsd:dateTime ;
+                                                                              <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#"^^xsd:string ;
+                                                                              rdfs:comment "Este vocabulario se utiliza para la descripción del dominio de la infraestructura de los medios de transporte. Esta ontología reutliza elementos de otras ontologías como la ontología de transportes Naptan."@es ,
+                                                                                           "Ontología sobre infraestructuras de transporte"@es ;
+                                                                              rdfs:label "Transporte Público"@es ;
+                                                                              owl:priorVersion "0.1"@es ;
+                                                                              owl:versionInfo """En esta versión se han agregado las siguientes clases:
+- Operador 
+- ZonaTarifaria
+
+Además se incluyeron las siguientes propiedades:
+- operador 
+- coronaTarifaria
+
+Se ha quitado de la descripción de la ontología lo mencionado en la versión anterior en la que se mencionaba que se reutilizaba términos de una ontología sobre unidades territoriales."""@es .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://data.ordnancesurvey.co.uk/ontology/spatialrelations/contains
+<http://data.ordnancesurvey.co.uk/ontology/spatialrelations/contains> rdf:type owl:AnnotationProperty .
+
+
+###  http://data.ordnancesurvey.co.uk/ontology/spatialrelations/isContainedBy
+<http://data.ordnancesurvey.co.uk/ontology/spatialrelations/isContainedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/isFormatOf
+<http://purl.org/dc/terms/isFormatOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/administrativeAreaCode
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> rdf:type owl:AnnotationProperty ;
+                                                                 rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                                 rdfs:range <http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode> ;
+                                                                 rdfs:domain <http://transport.data.gov.uk/def/naptan/AdministrativeArea> .
+
+
+###  http://transport.data.gov.uk/def/naptan/airport
+<http://transport.data.gov.uk/def/naptan/airport> rdf:type owl:AnnotationProperty ;
+                                                  rdfs:range <http://transport.data.gov.uk/def/naptan/Airport> .
+
+
+###  http://transport.data.gov.uk/def/naptan/atcoAreaCode
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> rdf:type owl:AnnotationProperty ;
+                                                       rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                       rdfs:range <http://transport.data.gov.uk/def/naptan/AtcoAreaCode> ;
+                                                       rdfs:domain <http://transport.data.gov.uk/def/naptan/AdministrativeArea> .
+
+
+###  http://transport.data.gov.uk/def/naptan/atcoCode
+<http://transport.data.gov.uk/def/naptan/atcoCode> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                   rdfs:range <http://transport.data.gov.uk/def/naptan/AtcoCode> ;
+                                                   rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/bearing
+<http://transport.data.gov.uk/def/naptan/bearing> rdf:type owl:AnnotationProperty ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Bearing"@en ;
+                                                  rdfs:domain <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/busStopTypeCode
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> rdf:type owl:AnnotationProperty ;
+                                                          rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                          rdfs:range <http://transport.data.gov.uk/def/naptan/BusStopTypeCode> ;
+                                                          rdfs:domain rdfs:Class .
+
+
+###  http://transport.data.gov.uk/def/naptan/childNptgLocality
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> rdf:type owl:AnnotationProperty ;
+                                                            rdfs:subPropertyOf <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/contains> .
+
+
+###  http://transport.data.gov.uk/def/naptan/childStopArea
+<http://transport.data.gov.uk/def/naptan/childStopArea> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:range <http://transport.data.gov.uk/def/naptan/StopArea> .
+
+
+###  http://transport.data.gov.uk/def/naptan/cleardownCode
+<http://transport.data.gov.uk/def/naptan/cleardownCode> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                        rdfs:range <http://transport.data.gov.uk/def/naptan/CleardownCode> ;
+                                                        rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/coachRef
+<http://transport.data.gov.uk/def/naptan/coachRef> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                   rdfs:range <http://transport.data.gov.uk/def/naptan/CoachStopCode> ;
+                                                   rdfs:domain <http://transport.data.gov.uk/def/naptan/CoachStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/coachStop
+<http://transport.data.gov.uk/def/naptan/coachStop> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:range <http://transport.data.gov.uk/def/naptan/CoachStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/compassPointBearing
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> rdf:type owl:AnnotationProperty ;
+                                                              rdfs:subPropertyOf <http://transport.data.gov.uk/def/naptan/bearing> .
+
+
+###  http://transport.data.gov.uk/def/naptan/countryCode
+<http://transport.data.gov.uk/def/naptan/countryCode> rdf:type owl:AnnotationProperty ;
+                                                      rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                      rdfs:range <http://transport.data.gov.uk/def/naptan/CountryCode> ;
+                                                      rdfs:domain <http://transport.data.gov.uk/def/naptan/Country> .
+
+
+###  http://transport.data.gov.uk/def/naptan/crossing
+<http://transport.data.gov.uk/def/naptan/crossing> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:comment "Where there is a street that intersects the Street, as well as a Landmark, the name of the crossing street may be included separately here."@en ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Crossing"@en ;
+                                                   rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/crsRef
+<http://transport.data.gov.uk/def/naptan/crsRef> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                 rdfs:range <http://transport.data.gov.uk/def/naptan/CrsCode> ;
+                                                 rdfs:domain <http://transport.data.gov.uk/def/naptan/Station> .
+
+
+###  http://transport.data.gov.uk/def/naptan/defaultWaitTime
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> rdf:type owl:AnnotationProperty ;
+                                                          rdfs:range xsd:duration ;
+                                                          rdfs:domain <http://transport.data.gov.uk/def/naptan/MarkedBusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/degreesBearing
+<http://transport.data.gov.uk/def/naptan/degreesBearing> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:subPropertyOf <http://transport.data.gov.uk/def/naptan/bearing> ;
+                                                         rdfs:range xsd:integer ;
+                                                         rdfs:domain <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/ferryRef
+<http://transport.data.gov.uk/def/naptan/ferryRef> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                   rdfs:range <http://transport.data.gov.uk/def/naptan/NationalFerryPortCode> ;
+                                                   rdfs:domain <http://transport.data.gov.uk/def/naptan/FerryTerminal> .
+
+
+###  http://transport.data.gov.uk/def/naptan/ferryTerminal
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> rdf:type owl:AnnotationProperty ;
+                                                        rdfs:range <http://transport.data.gov.uk/def/naptan/FerryTerminal> .
+
+
+###  http://transport.data.gov.uk/def/naptan/iataRef
+<http://transport.data.gov.uk/def/naptan/iataRef> rdf:type owl:AnnotationProperty ;
+                                                  rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                  rdfs:range <http://transport.data.gov.uk/def/naptan/IataCode> ;
+                                                  rdfs:domain <http://transport.data.gov.uk/def/naptan/Airport> .
+
+
+###  http://transport.data.gov.uk/def/naptan/indicator
+<http://transport.data.gov.uk/def/naptan/indicator> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:comment "Indicative description of the relative position of the stop, for example, \"100 yards from Town Hall\".  Bay Stand or Stance number should be placed here."@en ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Indicator"@en ;
+                                                    rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/landmark
+<http://transport.data.gov.uk/def/naptan/landmark> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:comment "Description of the nearest landmark to the stop, for example 'Town Hall'. Or nearest street crossing that can be used to distinguish stop from other stops in the street, i.e. Landmark may be a crossing."@en ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Landmark"@en ;
+                                                   rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/localityCentre
+<http://transport.data.gov.uk/def/naptan/localityCentre> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:range xsd:boolean ;
+                                                         rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/mainNptgLocality
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> rdf:type owl:AnnotationProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/metro
+<http://transport.data.gov.uk/def/naptan/metro> rdf:type owl:AnnotationProperty ;
+                                                rdfs:range <http://transport.data.gov.uk/def/naptan/Metro> .
+
+
+###  http://transport.data.gov.uk/def/naptan/metroRef
+<http://transport.data.gov.uk/def/naptan/metroRef> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                   rdfs:range <http://transport.data.gov.uk/def/naptan/MetroCode> ;
+                                                   rdfs:domain <http://transport.data.gov.uk/def/naptan/Metro> .
+
+
+###  http://transport.data.gov.uk/def/naptan/naptanCode
+<http://transport.data.gov.uk/def/naptan/naptanCode> rdf:type owl:AnnotationProperty ;
+                                                     rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                     rdfs:range <http://transport.data.gov.uk/def/naptan/NaptanCode> ;
+                                                     rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/nptgDistrictCode
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> rdf:type owl:AnnotationProperty ;
+                                                           rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                           rdfs:range <http://transport.data.gov.uk/def/naptan/NptgDistrictCode> ;
+                                                           rdfs:domain <http://transport.data.gov.uk/def/naptan/NptgDistrict> .
+
+
+###  http://transport.data.gov.uk/def/naptan/nptgLocalityCode
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> rdf:type owl:AnnotationProperty ;
+                                                           rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> .
+
+
+###  http://transport.data.gov.uk/def/naptan/parentNptgLocality
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> rdf:type owl:AnnotationProperty ;
+                                                             rdfs:subPropertyOf <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/isContainedBy> .
+
+
+###  http://transport.data.gov.uk/def/naptan/parentStopArea
+<http://transport.data.gov.uk/def/naptan/parentStopArea> rdf:type owl:AnnotationProperty ;
+                                                         rdfs:range <http://transport.data.gov.uk/def/naptan/StopArea> .
+
+
+###  http://transport.data.gov.uk/def/naptan/plateCode
+<http://transport.data.gov.uk/def/naptan/plateCode> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                    rdfs:range <http://transport.data.gov.uk/def/naptan/PlateCode> ;
+                                                    rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/plusbusZoneCode
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> rdf:type owl:AnnotationProperty ;
+                                                          rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                          rdfs:range <http://transport.data.gov.uk/def/naptan/PlusbusZoneCode> ;
+                                                          rdfs:domain <http://transport.data.gov.uk/def/naptan/PlusbusZone> .
+
+
+###  http://transport.data.gov.uk/def/naptan/regionCode
+<http://transport.data.gov.uk/def/naptan/regionCode> rdf:type owl:AnnotationProperty ;
+                                                     rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                     rdfs:range <http://transport.data.gov.uk/def/naptan/RegionCode> ;
+                                                     rdfs:domain <http://transport.data.gov.uk/def/naptan/Region> .
+
+
+###  http://transport.data.gov.uk/def/naptan/replacement
+<http://transport.data.gov.uk/def/naptan/replacement> rdf:type owl:AnnotationProperty ;
+                                                      rdfs:range <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/sourceLocalityType
+<http://transport.data.gov.uk/def/naptan/sourceLocalityType> rdf:type owl:AnnotationProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/station
+<http://transport.data.gov.uk/def/naptan/station> rdf:type owl:AnnotationProperty ;
+                                                  rdfs:range <http://transport.data.gov.uk/def/naptan/Station> .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopAreaCode
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> rdf:type owl:AnnotationProperty ;
+                                                       rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                       rdfs:range <http://transport.data.gov.uk/def/naptan/StopAreaCode> ;
+                                                       rdfs:domain <http://transport.data.gov.uk/def/naptan/StopArea> .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopAreaTypeCode
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> rdf:type owl:AnnotationProperty ;
+                                                           rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                           rdfs:range <http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                           rdfs:domain rdfs:Class .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopStatus
+<http://transport.data.gov.uk/def/naptan/stopStatus> rdf:type owl:AnnotationProperty ;
+                                                     rdfs:range <http://transport.data.gov.uk/def/naptan/StopStatus> .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopTypeCode
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> rdf:type owl:AnnotationProperty ;
+                                                       rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                       rdfs:range <http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                       rdfs:domain rdfs:Class .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopValidity
+<http://transport.data.gov.uk/def/naptan/stopValidity> rdf:type owl:AnnotationProperty ;
+                                                       rdfs:range <http://transport.data.gov.uk/def/naptan/StopValidity> .
+
+
+###  http://transport.data.gov.uk/def/naptan/street
+<http://transport.data.gov.uk/def/naptan/street> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:comment "Street of stop.  May be road name eg B2710."@en ;
+                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                 rdfs:label "Street"@en ;
+                                                 rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/suburb
+<http://transport.data.gov.uk/def/naptan/suburb> rdf:type owl:AnnotationProperty ;
+                                                 rdfs:comment "Suburb within which stop lies."@en ;
+                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                 rdfs:label "Suburb"@en ;
+                                                 rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/timingStatusCode
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> rdf:type owl:AnnotationProperty ;
+                                                           rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                           rdfs:range <http://transport.data.gov.uk/def/naptan/TimingStatusCode> ;
+                                                           rdfs:domain rdfs:Class .
+
+
+###  http://transport.data.gov.uk/def/naptan/tiplocRef
+<http://transport.data.gov.uk/def/naptan/tiplocRef> rdf:type owl:AnnotationProperty ;
+                                                    rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#notation> ;
+                                                    rdfs:range <http://transport.data.gov.uk/def/naptan/TiplocCode> ;
+                                                    rdfs:domain <http://transport.data.gov.uk/def/naptan/Station> .
+
+
+###  http://transport.data.gov.uk/def/naptan/town
+<http://transport.data.gov.uk/def/naptan/town> rdf:type owl:AnnotationProperty ;
+                                               rdfs:comment "Town within which stop lies."@en ;
+                                               rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                               rdfs:label "Town"@en ;
+                                               rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/validityInterval
+<http://transport.data.gov.uk/def/naptan/validityInterval> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#browse
+<http://usefulinc.com/ns/doap#browse> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#bug-database
+<http://usefulinc.com/ns/doap#bug-database> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#homepage
+<http://usefulinc.com/ns/doap#homepage> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#location
+<http://usefulinc.com/ns/doap#location> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#releaseOf
+<http://usefulinc.com/ns/doap#releaseOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#repository
+<http://usefulinc.com/ns/doap#repository> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#revision
+<http://usefulinc.com/ns/doap#revision> rdf:type owl:AnnotationProperty .
+
+
+###  http://usefulinc.com/ns/doap#wiki
+<http://usefulinc.com/ns/doap#wiki> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/isPrimaryTopicOf
+<http://xmlns.com/foaf/0.1/isPrimaryTopicOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode
+<http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode> rdf:type rdfs:Datatype ;
+                                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                 rdfs:label "Administrative Area Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/AtcoAreaCode
+<http://transport.data.gov.uk/def/naptan/AtcoAreaCode> rdf:type rdfs:Datatype ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "ATCO Area Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/AtcoCode
+<http://transport.data.gov.uk/def/naptan/AtcoCode> rdf:type rdfs:Datatype ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "ATCO Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusStopTypeCode
+<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> rdf:type rdfs:Datatype ;
+                                                          rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Bus Stop Type Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CleardownCode
+<http://transport.data.gov.uk/def/naptan/CleardownCode> rdf:type rdfs:Datatype ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Cleardown Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CoachStopCode
+<http://transport.data.gov.uk/def/naptan/CoachStopCode> rdf:type rdfs:Datatype ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Coach Stop Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CountryCode
+<http://transport.data.gov.uk/def/naptan/CountryCode> rdf:type rdfs:Datatype ;
+                                                      rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                      rdfs:label "Country Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CrsCode
+<http://transport.data.gov.uk/def/naptan/CrsCode> rdf:type rdfs:Datatype ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "CRS Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/IataCode
+<http://transport.data.gov.uk/def/naptan/IataCode> rdf:type rdfs:Datatype ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "IATA Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/MetroCode
+<http://transport.data.gov.uk/def/naptan/MetroCode> rdf:type rdfs:Datatype ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "CRS Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/NaptanCode
+<http://transport.data.gov.uk/def/naptan/NaptanCode> rdf:type rdfs:Datatype ;
+                                                     rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "Naptan Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/NationalFerryPortCode
+<http://transport.data.gov.uk/def/naptan/NationalFerryPortCode> rdf:type rdfs:Datatype ;
+                                                                rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                rdfs:label "National Ferry Port Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/NptgDistrictCode
+<http://transport.data.gov.uk/def/naptan/NptgDistrictCode> rdf:type rdfs:Datatype ;
+                                                           rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "NPTG District Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/PlateCode
+<http://transport.data.gov.uk/def/naptan/PlateCode> rdf:type rdfs:Datatype ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Plate Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/PlusbusZoneCode
+<http://transport.data.gov.uk/def/naptan/PlusbusZoneCode> rdf:type rdfs:Datatype ;
+                                                          rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Plusbus Zone Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/RegionCode
+<http://transport.data.gov.uk/def/naptan/RegionCode> rdf:type rdfs:Datatype ;
+                                                     rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "Region Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopAreaCode
+<http://transport.data.gov.uk/def/naptan/StopAreaCode> rdf:type rdfs:Datatype ;
+                                                       rdfs:comment "The ATCO recommended coding for stop areas (groups) as defined in the NaPTAN specification."@en ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Stop Area Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopAreaTypeCode
+<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> rdf:type rdfs:Datatype ;
+                                                           rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "Stop Area Type Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopTypeCode
+<http://transport.data.gov.uk/def/naptan/StopTypeCode> rdf:type rdfs:Datatype ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Stop Type Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TimingStatusCode
+<http://transport.data.gov.uk/def/naptan/TimingStatusCode> rdf:type rdfs:Datatype ;
+                                                           rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "Timing Status Code"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TiplocCode
+<http://transport.data.gov.uk/def/naptan/TiplocCode> rdf:type rdfs:Datatype ;
+                                                     rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "TIPLOC Code"@en .
+
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://transport.data.gov.uk/def/naptan/administrativeArea
+<http://transport.data.gov.uk/def/naptan/administrativeArea> rdf:type owl:ObjectProperty ;
+                                                             rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                             rdfs:label "Adminstrative Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/airport
+<http://transport.data.gov.uk/def/naptan/airport> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://transport.data.gov.uk/def/naptan/AirStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/childNptgLocality
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> rdf:type owl:ObjectProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/childStopArea
+<http://transport.data.gov.uk/def/naptan/childStopArea> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://transport.data.gov.uk/def/naptan/StopArea> .
+
+
+###  http://transport.data.gov.uk/def/naptan/coachStop
+<http://transport.data.gov.uk/def/naptan/coachStop> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://transport.data.gov.uk/def/naptan/CoachStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/compassPointBearing
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://transport.data.gov.uk/def/naptan/BusStop> .
+
+
+###  http://transport.data.gov.uk/def/naptan/country
+<http://transport.data.gov.uk/def/naptan/country> rdf:type owl:ObjectProperty ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Country"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/ferryTerminal
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://transport.data.gov.uk/def/naptan/FerryStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/mainNptgLocality
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/metro
+<http://transport.data.gov.uk/def/naptan/metro> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/nptgDistrict
+<http://transport.data.gov.uk/def/naptan/nptgDistrict> rdf:type owl:ObjectProperty ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "NPTG District"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/nptgLocality
+<http://transport.data.gov.uk/def/naptan/nptgLocality> rdf:type owl:ObjectProperty ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "NPTG Locality"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/nptgLocalityCode
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> rdf:type owl:ObjectProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/parentNptgLocality
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> rdf:type owl:ObjectProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/parentStopArea
+<http://transport.data.gov.uk/def/naptan/parentStopArea> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://transport.data.gov.uk/def/naptan/StopArea> .
+
+
+###  http://transport.data.gov.uk/def/naptan/plusbusZone
+<http://transport.data.gov.uk/def/naptan/plusbusZone> rdf:type owl:ObjectProperty ;
+                                                      rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                      rdfs:label "Plusbus Zone"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/region
+<http://transport.data.gov.uk/def/naptan/region> rdf:type owl:ObjectProperty ;
+                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                 rdfs:label "Region"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/replacement
+<http://transport.data.gov.uk/def/naptan/replacement> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/sourceLocalityType
+<http://transport.data.gov.uk/def/naptan/sourceLocalityType> rdf:type owl:ObjectProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/station
+<http://transport.data.gov.uk/def/naptan/station> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/status
+<http://transport.data.gov.uk/def/naptan/status> rdf:type owl:ObjectProperty ;
+                                                 rdfs:comment "Indicates whether the entity this annotates is available for use. Use of this attribute allows entities to be retired without deleting the details from the dataset."@en ;
+                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                 rdfs:label "Status"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopArea
+<http://transport.data.gov.uk/def/naptan/stopArea> rdf:type owl:ObjectProperty ;
+                                                   rdfs:range <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Stop Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopPoint
+<http://transport.data.gov.uk/def/naptan/stopPoint> rdf:type owl:ObjectProperty ;
+                                                    rdfs:range <http://transport.data.gov.uk/def/naptan/StopPoint> ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopStatus
+<http://transport.data.gov.uk/def/naptan/stopStatus> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://transport.data.gov.uk/def/naptan/StopValidity> .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopValidity
+<http://transport.data.gov.uk/def/naptan/stopValidity> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <http://transport.data.gov.uk/def/naptan/StopPoint> .
+
+
+###  http://transport.data.gov.uk/def/naptan/validityInterval
+<http://transport.data.gov.uk/def/naptan/validityInterval> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://transport.data.gov.uk/def/naptan/StopValidity> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea
+:cabeceraLinea rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :parada .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria
+:coronaTarifaria rdf:type owl:ObjectProperty ;
+                 rdfs:range :ZonaTarifaria ;
+                 rdfs:comment "La parada del medio de transporte pertenece a una zona tarifaria."@es ;
+                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                 rdfs:label "corona tarifaria"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada
+:estacionTieneParada rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :paradaEnEstacion ;
+                     rdfs:domain <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                     rdfs:range [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Darsena
+                                                :ParadaDeCercanias
+                                                :ParadaDeMetro
+                                                :ParadaDeMetroLigero
+                                              )
+                                ] ;
+                     <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                     rdfs:comment "Propiedad que indica que una zona de parada como las estaciones o intercambiadores tienen paradas que no están en la calle."^^xsd:string ;
+                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                     rdfs:label "Tiene parada no en la calle"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea
+:linea rdf:type owl:ObjectProperty ;
+       owl:inverseOf :parada ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( <http://transport.data.gov.uk/def/naptan/StopArea>
+                                   <http://transport.data.gov.uk/def/naptan/StopPoint>
+                                 )
+                   ] ;
+       rdfs:range :Linea ;
+       <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+       rdfs:comment "Propiedad inversa de tiene parada."^^xsd:string ;
+       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+       rdfs:label "Línea a la que pertenece una parada"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador
+:operador rdf:type owl:ObjectProperty ;
+          rdfs:range :Operador ;
+          rdfs:comment "El medio de transporte es gestionado por determinado operador."@es ;
+          rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+          rdfs:label "operador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada
+:parada rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf <http://transport.data.gov.uk/def/naptan/stopArea> ,
+                           <http://transport.data.gov.uk/def/naptan/stopPoint> ;
+        rdfs:domain :Linea ;
+        rdfs:range [ rdf:type owl:Class ;
+                     owl:unionOf ( <http://transport.data.gov.uk/def/naptan/StopArea>
+                                   <http://transport.data.gov.uk/def/naptan/StopPoint>
+                                 )
+                   ] ;
+        <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+        rdfs:comment "Parada que pertenece a una línea"@es ;
+        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+        rdfs:label "parada"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion
+:paradaEnEstacion rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :parada ;
+                  rdfs:domain [ rdf:type owl:Class ;
+                                owl:unionOf ( :Darsena
+                                              :ParadaDeCercanias
+                                              :ParadaDeMetro
+                                              :ParadaDeMetroLigero
+                                            )
+                              ] ;
+                  rdfs:range <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                  <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                  rdfs:comment "Propiedad inversa de tiene parada no en la calle."^^xsd:string ;
+                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                  rdfs:label "Es parada no en la calle de "@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador
+:paradaEnIntercambiador rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :parada ;
+                        <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                        rdfs:comment "Dígito que indica el modo del intercambiador"@es ;
+                        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                        rdfs:label "Modo Intercambiador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea
+:terminalLinea rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :parada .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada
+:tipoParada rdf:type owl:ObjectProperty ;
+            rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+            <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+            rdfs:comment "Distintos sitios donde se encuentran las paradas, ya sean esta en la vía pública o dentro de una estación"@es ;
+            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+            rdfs:label "Tipo de parada"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://transport.data.gov.uk/def/naptan/administrativeAreaCode
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/atcoAreaCode
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/atcoCode
+<http://transport.data.gov.uk/def/naptan/atcoCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/busStopTypeCode
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/cleardownCode
+<http://transport.data.gov.uk/def/naptan/cleardownCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/coachRef
+<http://transport.data.gov.uk/def/naptan/coachRef> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/countryCode
+<http://transport.data.gov.uk/def/naptan/countryCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/crsRef
+<http://transport.data.gov.uk/def/naptan/crsRef> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/defaultWaitTime
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/degreesBearing
+<http://transport.data.gov.uk/def/naptan/degreesBearing> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/ferryRef
+<http://transport.data.gov.uk/def/naptan/ferryRef> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/iataRef
+<http://transport.data.gov.uk/def/naptan/iataRef> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/localityCentre
+<http://transport.data.gov.uk/def/naptan/localityCentre> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/metroRef
+<http://transport.data.gov.uk/def/naptan/metroRef> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/naptanCode
+<http://transport.data.gov.uk/def/naptan/naptanCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/nptgDistrictCode
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/plateCode
+<http://transport.data.gov.uk/def/naptan/plateCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/plusbusZoneCode
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/regionCode
+<http://transport.data.gov.uk/def/naptan/regionCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopAreaCode
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopAreaTypeCode
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/stopTypeCode
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/timingStatusCode
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> rdf:type owl:DatatypeProperty .
+
+
+###  http://transport.data.gov.uk/def/naptan/tiplocRef
+<http://transport.data.gov.uk/def/naptan/tiplocRef> rdf:type owl:DatatypeProperty .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador
+:intercambiador rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Intercambiador ;
+                rdfs:range xsd:int ;
+                <http://purl.org/dc/terms/issued> "2014-05-03"^^xsd:dateTime ;
+                rdfs:comment "Dígito que indica el intercambiador"@es ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                rdfs:label "Intercambiador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano
+:sectorUrbano rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:range xsd:string ;
+              <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+              rdfs:comment "Número del sector urbano dónde se encuentra la parada"@es ;
+              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+              rdfs:label "Sector urbano"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela
+:tesela rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:range xsd:string ;
+        <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+        rdfs:comment "Tesela en la que se encuentra la parada"@es ;
+        rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+        rdfs:label "Tesela"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://transport.data.gov.uk/def/naptan/AirAccessArea
+<http://transport.data.gov.uk/def/naptan/AirAccessArea> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/AirStopPoint> ;
+                                                        <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GAT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Air Airside Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/AirStopPoint
+<http://transport.data.gov.uk/def/naptan/AirStopPoint> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> ;
+                                                       rdfs:comment "An airport PTAN."@en ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Air Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/Airport
+<http://transport.data.gov.uk/def/naptan/Airport> rdf:type owl:Class ;
+                                                  rdfs:comment "An airport."@en ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Airport"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/AirportBuilding
+<http://transport.data.gov.uk/def/naptan/AirportBuilding> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                          <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GAIR"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                          rdfs:comment "Airport Building."@en ;
+                                                          rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Airport Building"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/AirportEntrance
+<http://transport.data.gov.uk/def/naptan/AirportEntrance> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/AirStopPoint> ;
+                                                          <http://transport.data.gov.uk/def/naptan/stopTypeCode> "AIR"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                          rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Airport Entrance"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea
+<http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                                    <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BST"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                    rdfs:label "Bus / Coach Station Access Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachStopPoint
+<http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopPoint> ;
+                                                            rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                            rdfs:label "Bus or Coach Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint
+<http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> ;
+                                                                    <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                    rdfs:label "On street Bus / Coach / Tram Stop"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                                 <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCS"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                 rdfs:label "Bus / Coach bay / stand / stance within Bus / Coach Stations"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                                      <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCE"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                      rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                      rdfs:label "Bus / Coach Station Entrance"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                                         <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCQ"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                         rdfs:label "Bus / Coach / Tram Variable Bay"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusOrCoachStation
+<http://transport.data.gov.uk/def/naptan/BusOrCoachStation> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                            <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GBCS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                            rdfs:comment "Bus / Coach Station."@en ;
+                                                            rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                            rdfs:label "Bus Or Coach Station"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/BusStop
+<http://transport.data.gov.uk/def/naptan/BusStop> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ,
+                                                                  <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> ;
+                                                  rdfs:comment "A bus, coach or tram stop"@en ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Bus Stop"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops
+<http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                                    <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GCLS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                                    rdfs:comment "Clustered on-street Bus / Coach / Tram stops."@en ;
+                                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                    rdfs:label "Clustered On-Street Bus Stops"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CoachCoverage
+<http://transport.data.gov.uk/def/naptan/CoachCoverage> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                        <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GCCH"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                        rdfs:comment "Coach Service Coverage."@en ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Coach Coverage"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CoachStationPoint
+<http://transport.data.gov.uk/def/naptan/CoachStationPoint> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ,
+                                                                            <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> ;
+                                                            rdfs:comment "A coach station PTAN."@en ;
+                                                            rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                            rdfs:label "Bus and Coach Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CoachStop
+<http://transport.data.gov.uk/def/naptan/CoachStop> rdf:type owl:Class ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Coach Stop"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CoachStopPoint
+<http://transport.data.gov.uk/def/naptan/CoachStopPoint> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Coach Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/CustomBusStop
+<http://transport.data.gov.uk/def/naptan/CustomBusStop> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> ;
+                                                        <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "CUS"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Custom (unmarked, or only marked on road)"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/FerryBerth
+<http://transport.data.gov.uk/def/naptan/FerryBerth> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/FerryStopPoint> ;
+                                                     <http://transport.data.gov.uk/def/naptan/stopTypeCode> "FBT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                     rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "Ferry Berth"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/FerryDockAccessArea
+<http://transport.data.gov.uk/def/naptan/FerryDockAccessArea> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/FerryStopPoint> ;
+                                                              <http://transport.data.gov.uk/def/naptan/stopTypeCode> "FER"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                              rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                              rdfs:label "Ferry / Dock Berth Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/FerryStopPoint
+<http://transport.data.gov.uk/def/naptan/FerryStopPoint> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> ;
+                                                         rdfs:comment "A ferry terminal or dock PTAN."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Ferry Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/FerryTerminal
+<http://transport.data.gov.uk/def/naptan/FerryTerminal> rdf:type owl:Class ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Ferry Terminal"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance
+<http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/FerryStopPoint> ;
+                                                                    <http://transport.data.gov.uk/def/naptan/stopTypeCode> "FTD"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                    rdfs:label "Ferry Terminal / Dock Entrance"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding
+<http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                                      <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GFTD"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                                      rdfs:comment "Ferry Terminal / Dock Building."@en ;
+                                                                      rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                      rdfs:label "Ferry Terminal Or Dock Building"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/FlexibleBusStop
+<http://transport.data.gov.uk/def/naptan/FlexibleBusStop> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> ;
+                                                          <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "FLX"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> ;
+                                                          rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Flexible zone"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/HailAndRideBusStop
+<http://transport.data.gov.uk/def/naptan/HailAndRideBusStop> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> ;
+                                                             <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "HAR"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> ;
+                                                             rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                             rdfs:label "Hail and Ride - requires Hail and Ride section"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/MarkedBusStop
+<http://transport.data.gov.uk/def/naptan/MarkedBusStop> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> ;
+                                                        <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "MKD"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Marked (pole, shelter etc)"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/Metro
+<http://transport.data.gov.uk/def/naptan/Metro> rdf:type owl:Class ;
+                                                rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                rdfs:label "Tram / Metro / Underground Station"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/MetroStopPoint
+<http://transport.data.gov.uk/def/naptan/MetroStopPoint> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> ;
+                                                         rdfs:comment "A metro, tram or underground station PTAN."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Metro Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/MultimodeInterchange
+<http://transport.data.gov.uk/def/naptan/MultimodeInterchange> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                               <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GMLT"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                               rdfs:comment "Multimode Interchange."@en ;
+                                                               rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                               rdfs:label "Multimode Interchange"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/OffStreetStopPoint
+<http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopPoint> ;
+                                                             rdfs:comment "Station, interchange or other off-street access point"@en ;
+                                                             rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                             rdfs:label "Off Street Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/OnStreetStopPoint
+<http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopPoint> ;
+                                                            rdfs:comment "On street access point"@en ;
+                                                            rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                            rdfs:label "On Street Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/OtherPoint
+<http://transport.data.gov.uk/def/naptan/OtherPoint> rdf:type owl:Class ;
+                                                     rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                     <http://transport.data.gov.uk/def/naptan/timingStatusCode> "OTH"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> ;
+                                                     rdfs:comment "This stop is not part of the service registration and is not liable to inspections or enforcement; it is not expected to be used as part of the timetable."@en ;
+                                                     rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "Other Bus Stop"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/OtherStructure
+<http://transport.data.gov.uk/def/naptan/OtherStructure> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                         <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GOTH"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                         rdfs:comment "Other Structure."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Other Structure"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops
+<http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                                 <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GPBS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                                 rdfs:comment "Paired on-street Bus / Coach / Tram stops."@en ;
+                                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                 rdfs:label "Paired On-Street Bus Stops"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/PrinciplePoint
+<http://transport.data.gov.uk/def/naptan/PrinciplePoint> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                         <http://transport.data.gov.uk/def/naptan/timingStatusCode> "PPT"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> ;
+                                                         rdfs:comment "This stop is part of the service registration and is liable to inspections and enforcement."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Principal Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint
+<http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                               <http://transport.data.gov.uk/def/naptan/timingStatusCode> "PTP"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> ;
+                                                               rdfs:comment "This stop is a Principal Point which is expected to be also used as a timing point within a timetable."@en ;
+                                                               rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                               rdfs:label "Principal and Time Info Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailAccessArea
+<http://transport.data.gov.uk/def/naptan/RailAccessArea> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> ;
+                                                         <http://transport.data.gov.uk/def/naptan/stopTypeCode> "RLY"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Rail Platform Access Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailPlatform
+<http://transport.data.gov.uk/def/naptan/RailPlatform> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> ;
+                                                       <http://transport.data.gov.uk/def/naptan/stopTypeCode> "RPL"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Rail Platform"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailStationEntrance
+<http://transport.data.gov.uk/def/naptan/RailStationEntrance> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> ;
+                                                              <http://transport.data.gov.uk/def/naptan/stopTypeCode> "RSE"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                              rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                              rdfs:label "Rail Station Entrance"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailStopPoint
+<http://transport.data.gov.uk/def/naptan/RailStopPoint> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> ;
+                                                        rdfs:comment "A railway station PTAN."@en ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Rail Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/RailwayStation
+<http://transport.data.gov.uk/def/naptan/RailwayStation> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                         <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GRLS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                         rdfs:comment "Railway station."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Railway Station"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/SharedTaxiRank
+<http://transport.data.gov.uk/def/naptan/SharedTaxiRank> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/TaxiStopPoint> ;
+                                                         <http://transport.data.gov.uk/def/naptan/stopTypeCode> "STR"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Shared Taxi Rank (head of)"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/Station
+<http://transport.data.gov.uk/def/naptan/Station> rdf:type owl:Class ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Rail Station"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopArea
+<http://transport.data.gov.uk/def/naptan/StopArea> rdf:type owl:Class ;
+                                                   rdfs:comment "A grouping of adjacent NaPTAN stops."@en ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Stop Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopPoint
+<http://transport.data.gov.uk/def/naptan/StopPoint> rdf:type owl:Class ;
+                                                    rdfs:comment "A NaPTAN stop definition."@en ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopStatus
+<http://transport.data.gov.uk/def/naptan/StopStatus> rdf:type owl:Class .
+
+
+###  http://transport.data.gov.uk/def/naptan/StopValidity
+<http://transport.data.gov.uk/def/naptan/StopValidity> rdf:type owl:Class ;
+                                                       rdfs:comment "Description of period for stop activity."@en ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Period of Stop Validity"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TaxiRank
+<http://transport.data.gov.uk/def/naptan/TaxiRank> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/TaxiStopPoint> ;
+                                                   <http://transport.data.gov.uk/def/naptan/stopTypeCode> "TXR"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Taxi Rank (head of)"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TaxiStopPoint
+<http://transport.data.gov.uk/def/naptan/TaxiStopPoint> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> ;
+                                                        rdfs:comment "A taxi rank"@en ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Taxi Stop Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TimeInfoPoint
+<http://transport.data.gov.uk/def/naptan/TimeInfoPoint> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ;
+                                                        <http://transport.data.gov.uk/def/naptan/timingStatusCode> "TIP"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> ;
+                                                        rdfs:comment "This stop is not part of the service registration and is not liable to inspections or enforcement, however it is expected to be used within a timetable to identify a timing point which will not be a Principal Point."@en ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Time Info Point"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation
+<http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/StopArea> ;
+                                                                        <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GTMU"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> ;
+                                                                        rdfs:comment "Tram / Metro / Underground Station."@en ;
+                                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                        rdfs:label "Tram Metro Or Underground Station"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> ;
+                                                                         <http://transport.data.gov.uk/def/naptan/stopTypeCode> "MET"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                         rdfs:label "Tram / Metro / Underground Access Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> ;
+                                                                       <http://transport.data.gov.uk/def/naptan/stopTypeCode> "PLT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                       rdfs:label "Metro and Underground Platform Access Area"@en .
+
+
+###  http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> ;
+                                                                              <http://transport.data.gov.uk/def/naptan/stopTypeCode> "TMU"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> ;
+                                                                              rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                              rdfs:label "Tram / Metro / Underground Entrance"@en .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena
+:Darsena rdf:type owl:Class ;
+         rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> ,
+                         <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> ;
+         owl:disjointWith :Marquesina ,
+                          :PosteParadaDeBus ;
+         <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+         rdfs:comment "Tipo de parada de autobús. Este tipo de paradas se encuentran dentro de los intercambiadores o estaciones de autobús"^^xsd:string ;
+         rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+         rdfs:label "Dársena"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus
+:EstacionDeAutobus rdf:type owl:Class ;
+                   rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusOrCoachStation> ;
+                   owl:disjointWith :EstacionDeCercanias ,
+                                    :EstacionDeMetro ,
+                                    :EstacionDeMetroLigero ,
+                                    :Intercambiador ;
+                   <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                   rdfs:comment "Una estación de autobús"^^xsd:string ;
+                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                   rdfs:label "Estación de autobús"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias
+:EstacionDeCercanias rdf:type owl:Class ;
+                     rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailwayStation> ;
+                     owl:disjointWith :EstacionDeMetro ,
+                                      :EstacionDeMetroLigero ,
+                                      :Intercambiador ;
+                     <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                     rdfs:comment "Una estación de cercanías"^^xsd:string ;
+                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                     rdfs:label "Estación de Cercanías"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro
+:EstacionDeMetro rdf:type owl:Class ;
+                 rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> ;
+                 owl:disjointWith :EstacionDeMetroLigero ,
+                                  :Intercambiador ;
+                 <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                 rdfs:comment "Una estación de metro"^^xsd:string ;
+                 rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                 rdfs:label "Estación de metro"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero
+:EstacionDeMetroLigero rdf:type owl:Class ;
+                       rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> ;
+                       owl:disjointWith :Intercambiador ;
+                       <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                       rdfs:comment "Una estación de metro ligero"^^xsd:string ;
+                       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                       rdfs:label "Estación de metro ligero"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador
+:Intercambiador rdf:type owl:Class ;
+                rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MultimodeInterchange> ;
+                <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                rdfs:comment "Conjunto de instalaciones que permite a los pasajeros la comunicación y enlace entre diversos medios de transporte [fuente: Diccionario de la Real Academia (DRAE) 2014]"^^xsd:string ;
+                rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                rdfs:label "Intercambiador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea
+:Linea rdf:type owl:Class ;
+       <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+       rdfs:comment "Son las líneas de los medios de transporte"^^xsd:string ;
+       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+       rdfs:label "Línea"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus
+:LineaBus rdf:type owl:Class ;
+          rdfs:subClassOf :Linea ;
+          owl:disjointWith :LineaMetro ,
+                           :LineaMetroLigero ,
+                           :LineaTren ;
+          <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+          rdfs:comment "Clase que representa una línea de autobús"^^xsd:string ;
+          rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+          rdfs:label "Línea de bus"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro
+:LineaMetro rdf:type owl:Class ;
+            rdfs:subClassOf :Linea ;
+            owl:disjointWith :LineaMetroLigero ,
+                             :LineaTren ;
+            <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+            rdfs:comment "Clase que representa una línea de metro"^^xsd:string ;
+            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+            rdfs:label "Línea de metro"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero
+:LineaMetroLigero rdf:type owl:Class ;
+                  rdfs:subClassOf :Linea ;
+                  owl:disjointWith :LineaTren ;
+                  <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                  rdfs:comment "Clase que representa una línea de metro ligero"^^xsd:string ;
+                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                  rdfs:label "Línea de metro ligero"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia
+:LineaTranvia rdf:type owl:Class ;
+              rdfs:subClassOf :Linea ;
+              <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+              rdfs:comment "Clase que representa una línea de tranvía"^^xsd:string ;
+              rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+              rdfs:label "Línea de tranvía"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren
+:LineaTren rdf:type owl:Class ;
+           rdfs:subClassOf :Linea ;
+           <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+           rdfs:comment "Clase que representa una línea de tren (por ejemplo, de Cercanías)"^^xsd:string ;
+           rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+           rdfs:label "Línea de tren"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina
+:Marquesina rdf:type owl:Class ;
+            rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> ;
+            owl:disjointWith :PosteParadaDeBus ;
+            <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+            rdfs:comment "Tipo de parada de autobús. Protege a las personas de la lluvia y del frío"^^xsd:string ;
+            rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+            rdfs:label "Marquesina"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador
+:Operador rdf:type owl:Class ;
+          rdfs:comment <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ,
+                       "Operador de los medios de transporte"@es ,
+                       "Operador de los medios de transporte."@es ;
+          rdfs:label "Operador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias
+:ParadaDeCercanias rdf:type owl:Class ;
+                   rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/RailStopPoint> ;
+                   owl:disjointWith :ParadaDeMetro ,
+                                    :ParadaDeMetroLigero ;
+                   <http://transport.data.gov.uk/def/naptan/airport> "2014-04-29"^^xsd:dateTime ;
+                   rdfs:comment "Una parada de cercanías"^^xsd:string ;
+                   rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                   rdfs:label "Parada de cercanías"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro
+:ParadaDeMetro rdf:type owl:Class ;
+               rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> ;
+               owl:disjointWith :ParadaDeMetroLigero ;
+               <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+               rdfs:comment "Una parada de metro"^^xsd:string ;
+               rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+               rdfs:label "Parada de metro"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero
+:ParadaDeMetroLigero rdf:type owl:Class ;
+                     rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/MetroStopPoint> ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :tipoParada ;
+                                       owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion>
+                                     ] ;
+                     <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                     rdfs:comment "Una parada de metro ligero"^^xsd:string ;
+                     rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                     rdfs:label "Parada de metro ligero"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus
+:PosteParadaDeBus rdf:type owl:Class ;
+                  rdfs:subClassOf <http://transport.data.gov.uk/def/naptan/BusStop> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :tipoParada ;
+                                    owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica>
+                                  ] ;
+                  <http://purl.org/dc/terms/issued> "2014-04-29"^^xsd:dateTime ;
+                  rdfs:comment "Tipo de parada de autobús"^^xsd:string ;
+                  rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ;
+                  rdfs:label "Poste"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria
+:ZonaTarifaria rdf:type owl:Class ;
+               rdfs:comment <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ,
+                            "Zona que permite definir la tarifa del sistema de transporte."@es ;
+               rdfs:label "Zona Tarifaria"@es .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion> rdf:type owl:NamedIndividual ,
+                                                                                                                         <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica> rdf:type owl:NamedIndividual ,
+                                                                                                                           <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> rdfs:comment "Unique identifier of the area."@en ;
+                                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                                 rdfs:label "Administrative Area Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/airport> rdfs:comment "Airport associated with a stop point."@en ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Airport"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> rdfs:comment "ATCO code for area."@en ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "ATCO Area Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/atcoCode> rdfs:comment "Full NaPTAN stop identifier that uniquely identifies the stop within the UK."@en ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "ATCO Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Bus Stop Type Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                            rdfs:label "Child NPTG Locality"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/childStopArea> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Child Stop Area"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/cleardownCode> rdfs:comment "A 20 bit number used for wireless cleardown of stop displays by some AVL systems. Number format defined by RTIG."@en ;
+                                                        rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Cleardown Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/coachRef> rdfs:comment "Nationally unique identifier for coach Stop Point used by a coach company. (Including for example stop codes used by the National Express Group)."@en ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Coach Stop Point Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/coachStop> rdfs:comment "Coach stop associated with a stop point."@en ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Coach Stop"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> rdfs:comment "Eight point compass bearing (N, S, E, W etc)"@en ;
+                                                              rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                              rdfs:label "Compass Point Bearing"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/countryCode> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                      rdfs:label "Country Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/crsRef> rdfs:comment "Three letter Computer Reservation System code identifying a station. e.g. KGX."@en ;
+                                                 rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                 rdfs:label "CRS Reference"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Default Wait Time"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/degreesBearing> rdfs:comment "Bearing in degrees"@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Degrees Bearing"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/ferryRef> rdfs:comment "National Ferry code for ferry port."@en ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Ferry Reference"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                        rdfs:label "Ferry Terminal"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/iataRef> rdfs:comment "International Air Transport Association code for the airport."@en ;
+                                                  rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "IATA Reference"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/localityCentre> rdfs:comment "Whether the locality is a centre or not."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Locality Centre"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> rdfs:comment "NPTG Localities for which the stop is a main interchange point, that is one of the main PTANs for accessing the network."@en ;
+                                                           rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "Main NPTG Locality"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/metro> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                rdfs:label "Metro Station"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/metroRef> rdfs:comment "Metro code for underground station."@en ;
+                                                   rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                   rdfs:label "Metro Reference"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/naptanCode> rdfs:comment "Short NaPTAN code for passengers to use when uniquely identifying the stop by SMS and other self-service channels."@en ;
+                                                     rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "NAPTAN Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> rdfs:comment "Unique identifier of the district."@en ;
+                                                           rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "NPTG District Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> rdfs:comment "Unique identifier of the locality."@en ;
+                                                           rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "NPTG Locality Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> rdfs:comment "Parent locality. Reference to another locality that contains the child locality completely. Must not be cyclic."@en ;
+                                                             rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                             rdfs:label "Parent NPTG Locality"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/parentStopArea> rdfs:comment "Code that identifies any parent stop area of the area. Many levels of parent hierarchy are allowed."@en ;
+                                                         rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                         rdfs:label "Parent Stop Area"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/plateCode> rdfs:comment "Plate number for stop. An arbitrary asset number that may be placed on stop to identify it."@en ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "Plate Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> rdfs:comment "Unique identifier of the Plusbus Zone."@en ;
+                                                          rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                          rdfs:label "Plusbus Zone Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/regionCode> rdfs:comment "Unique identifier of the region."@en ;
+                                                     rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "Region Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/replacement> rdfs:comment "Stop that the stop has been transferred to."@en ;
+                                                      rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                      rdfs:label "Replacement Stop Point"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/sourceLocalityType> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                             rdfs:label "Source Locality Type"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/station> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                  rdfs:label "Station"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> rdfs:comment "Code that uniquely identifies the stop area within the UK."@en ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Stop Area Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "Stop Area Type Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/stopStatus> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                     rdfs:label "Stop Status"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Stop Type Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/stopValidity> rdfs:comment "Description of period for stop activity."@en ;
+                                                       rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                       rdfs:label "Stop Validity"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "Timing Status Code"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/tiplocRef> rdfs:comment "TIming Point LOcation Code . Character code 4-6 alphanumeric characters e.g. CHST, KNGX, KNGXBAL. Non-rail locations may also have TIPLOCs."@en ;
+                                                    rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                    rdfs:label "TIPLOC Reference"@en .
+
+
+<http://transport.data.gov.uk/def/naptan/validityInterval> rdfs:isDefinedBy <http://transport.data.gov.uk/def/naptan> ;
+                                                           rdfs:label "Validity Interval"@en .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

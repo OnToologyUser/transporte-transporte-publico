@@ -1,0 +1,1567 @@
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico_v0.2> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/creator> "Javier Chamorro (CRTM)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/creator> "Jos\u00E9 Mar\u00EDa D\u00EDez (Ayuntamiento de Burgos)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/creator> "Luis Criado (CRTM)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/creator> "Mar\u00EDa Jes\u00FAs Fern\u00E1ndez Ru\u00EDz (Ayuntamiento de Zaragoza)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Polit\u00E9cnica de Madrid, and LocaliData)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/creator> "Rodrigo Medrano Calder\u00F3n (Escuela T\u00E9cnica Superior de Ingenieros Inform\u00E1ticos)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/date> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representaci\u00F3n de datos de la infraestructura de medios de transporte"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.html"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.owl"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/terms/issued> "2014-04-29"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/terms/modified> "2018-06-04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario se utiliza para la descripci\u00F3n del dominio de la infraestructura de los medios de transporte. Esta ontolog\u00EDa reutliza elementos de otras ontolog\u00EDas como la ontolog\u00EDa de transportes Naptan."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontolog\u00EDa sobre infraestructuras de transporte"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#label> "Transporte P\u00FAblico"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#priorVersion> "0.1"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#versionInfo> "En esta versi\u00F3n se han agregado las siguientes clases:\n- Operador \n- ZonaTarifaria\n\nAdem\u00E1s se incluyeron las siguientes propiedades:\n- operador \n- coronaTarifaria\n\nSe ha quitado de la descripci\u00F3n de la ontolog\u00EDa lo mencionado en la versi\u00F3n anterior en la que se mencionaba que se reutilizaba t\u00E9rminos de una ontolog\u00EDa sobre unidades territoriales."@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://data.ordnancesurvey.co.uk/ontology/spatialrelations/contains
+<http://data.ordnancesurvey.co.uk/ontology/spatialrelations/contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://data.ordnancesurvey.co.uk/ontology/spatialrelations/isContainedBy
+<http://data.ordnancesurvey.co.uk/ontology/spatialrelations/isContainedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/isFormatOf
+<http://purl.org/dc/terms/isFormatOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/administrativeAreaCode
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode> .
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/AdministrativeArea> .
+# 
+# http://transport.data.gov.uk/def/naptan/airport
+<http://transport.data.gov.uk/def/naptan/airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/airport> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/Airport> .
+# 
+# http://transport.data.gov.uk/def/naptan/atcoAreaCode
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/AtcoAreaCode> .
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/AdministrativeArea> .
+# 
+# http://transport.data.gov.uk/def/naptan/atcoCode
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/AtcoCode> .
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/bearing
+<http://transport.data.gov.uk/def/naptan/bearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/bearing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/bearing> <http://www.w3.org/2000/01/rdf-schema#label> "Bearing"@en .
+<http://transport.data.gov.uk/def/naptan/bearing> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/BusStop> .
+# 
+# http://transport.data.gov.uk/def/naptan/busStopTypeCode
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/BusStopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> .
+# 
+# http://transport.data.gov.uk/def/naptan/childNptgLocality
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/contains> .
+# 
+# http://transport.data.gov.uk/def/naptan/childStopArea
+<http://transport.data.gov.uk/def/naptan/childStopArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/childStopArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopArea> .
+# 
+# http://transport.data.gov.uk/def/naptan/cleardownCode
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/CleardownCode> .
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/coachRef
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/CoachStopCode> .
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/CoachStop> .
+# 
+# http://transport.data.gov.uk/def/naptan/coachStop
+<http://transport.data.gov.uk/def/naptan/coachStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/coachStop> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/CoachStop> .
+# 
+# http://transport.data.gov.uk/def/naptan/compassPointBearing
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://transport.data.gov.uk/def/naptan/bearing> .
+# 
+# http://transport.data.gov.uk/def/naptan/countryCode
+<http://transport.data.gov.uk/def/naptan/countryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/countryCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/countryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/CountryCode> .
+<http://transport.data.gov.uk/def/naptan/countryCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/Country> .
+# 
+# http://transport.data.gov.uk/def/naptan/crossing
+<http://transport.data.gov.uk/def/naptan/crossing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/crossing> <http://www.w3.org/2000/01/rdf-schema#comment> "Where there is a street that intersects the Street, as well as a Landmark, the name of the crossing street may be included separately here."@en .
+<http://transport.data.gov.uk/def/naptan/crossing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/crossing> <http://www.w3.org/2000/01/rdf-schema#label> "Crossing"@en .
+<http://transport.data.gov.uk/def/naptan/crossing> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/crsRef
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/CrsCode> .
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/Station> .
+# 
+# http://transport.data.gov.uk/def/naptan/defaultWaitTime
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/MarkedBusStop> .
+# 
+# http://transport.data.gov.uk/def/naptan/degreesBearing
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://transport.data.gov.uk/def/naptan/bearing> .
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/BusStop> .
+# 
+# http://transport.data.gov.uk/def/naptan/ferryRef
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/NationalFerryPortCode> .
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/FerryTerminal> .
+# 
+# http://transport.data.gov.uk/def/naptan/ferryTerminal
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/FerryTerminal> .
+# 
+# http://transport.data.gov.uk/def/naptan/iataRef
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/IataCode> .
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/Airport> .
+# 
+# http://transport.data.gov.uk/def/naptan/indicator
+<http://transport.data.gov.uk/def/naptan/indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/indicator> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicative description of the relative position of the stop, for example, \"100 yards from Town Hall\".  Bay Stand or Stance number should be placed here."@en .
+<http://transport.data.gov.uk/def/naptan/indicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator"@en .
+<http://transport.data.gov.uk/def/naptan/indicator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/landmark
+<http://transport.data.gov.uk/def/naptan/landmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/landmark> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the nearest landmark to the stop, for example 'Town Hall'. Or nearest street crossing that can be used to distinguish stop from other stops in the street, i.e. Landmark may be a crossing."@en .
+<http://transport.data.gov.uk/def/naptan/landmark> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/landmark> <http://www.w3.org/2000/01/rdf-schema#label> "Landmark"@en .
+<http://transport.data.gov.uk/def/naptan/landmark> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/localityCentre
+<http://transport.data.gov.uk/def/naptan/localityCentre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/localityCentre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://transport.data.gov.uk/def/naptan/localityCentre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/mainNptgLocality
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/metro
+<http://transport.data.gov.uk/def/naptan/metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/metro> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/Metro> .
+# 
+# http://transport.data.gov.uk/def/naptan/metroRef
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/MetroCode> .
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/Metro> .
+# 
+# http://transport.data.gov.uk/def/naptan/naptanCode
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/NaptanCode> .
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/nptgDistrictCode
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/NptgDistrictCode> .
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/NptgDistrict> .
+# 
+# http://transport.data.gov.uk/def/naptan/nptgLocalityCode
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+# 
+# http://transport.data.gov.uk/def/naptan/parentNptgLocality
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/isContainedBy> .
+# 
+# http://transport.data.gov.uk/def/naptan/parentStopArea
+<http://transport.data.gov.uk/def/naptan/parentStopArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/parentStopArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopArea> .
+# 
+# http://transport.data.gov.uk/def/naptan/plateCode
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/PlateCode> .
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/plusbusZoneCode
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/PlusbusZoneCode> .
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/PlusbusZone> .
+# 
+# http://transport.data.gov.uk/def/naptan/regionCode
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/RegionCode> .
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/Region> .
+# 
+# http://transport.data.gov.uk/def/naptan/replacement
+<http://transport.data.gov.uk/def/naptan/replacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/replacement> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/sourceLocalityType
+<http://transport.data.gov.uk/def/naptan/sourceLocalityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/station
+<http://transport.data.gov.uk/def/naptan/station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/station> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/Station> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopAreaCode
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopAreaCode> .
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopArea> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopAreaTypeCode
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopStatus
+<http://transport.data.gov.uk/def/naptan/stopStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/stopStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopStatus> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopTypeCode
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopValidity
+<http://transport.data.gov.uk/def/naptan/stopValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/stopValidity> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopValidity> .
+# 
+# http://transport.data.gov.uk/def/naptan/street
+<http://transport.data.gov.uk/def/naptan/street> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/street> <http://www.w3.org/2000/01/rdf-schema#comment> "Street of stop.  May be road name eg B2710."@en .
+<http://transport.data.gov.uk/def/naptan/street> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/street> <http://www.w3.org/2000/01/rdf-schema#label> "Street"@en .
+<http://transport.data.gov.uk/def/naptan/street> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/suburb
+<http://transport.data.gov.uk/def/naptan/suburb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/suburb> <http://www.w3.org/2000/01/rdf-schema#comment> "Suburb within which stop lies."@en .
+<http://transport.data.gov.uk/def/naptan/suburb> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/suburb> <http://www.w3.org/2000/01/rdf-schema#label> "Suburb"@en .
+<http://transport.data.gov.uk/def/naptan/suburb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/timingStatusCode
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/TimingStatusCode> .
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Class> .
+# 
+# http://transport.data.gov.uk/def/naptan/tiplocRef
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#notation> .
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/TiplocCode> .
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/Station> .
+# 
+# http://transport.data.gov.uk/def/naptan/town
+<http://transport.data.gov.uk/def/naptan/town> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://transport.data.gov.uk/def/naptan/town> <http://www.w3.org/2000/01/rdf-schema#comment> "Town within which stop lies."@en .
+<http://transport.data.gov.uk/def/naptan/town> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/town> <http://www.w3.org/2000/01/rdf-schema#label> "Town"@en .
+<http://transport.data.gov.uk/def/naptan/town> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/validityInterval
+<http://transport.data.gov.uk/def/naptan/validityInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#browse
+<http://usefulinc.com/ns/doap#browse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#bug-database
+<http://usefulinc.com/ns/doap#bug-database> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#homepage
+<http://usefulinc.com/ns/doap#homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#location
+<http://usefulinc.com/ns/doap#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#releaseOf
+<http://usefulinc.com/ns/doap#releaseOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#repository
+<http://usefulinc.com/ns/doap#repository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#revision
+<http://usefulinc.com/ns/doap#revision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://usefulinc.com/ns/doap#wiki
+<http://usefulinc.com/ns/doap#wiki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/isPrimaryTopicOf
+<http://xmlns.com/foaf/0.1/isPrimaryTopicOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode
+<http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Area Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/AtcoAreaCode
+<http://transport.data.gov.uk/def/naptan/AtcoAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/AtcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/AtcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#label> "ATCO Area Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/AtcoCode
+<http://transport.data.gov.uk/def/naptan/AtcoCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/AtcoCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/AtcoCode> <http://www.w3.org/2000/01/rdf-schema#label> "ATCO Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusStopTypeCode
+<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> <http://www.w3.org/2000/01/rdf-schema#label> "Bus Stop Type Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CleardownCode
+<http://transport.data.gov.uk/def/naptan/CleardownCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/CleardownCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CleardownCode> <http://www.w3.org/2000/01/rdf-schema#label> "Cleardown Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CoachStopCode
+<http://transport.data.gov.uk/def/naptan/CoachStopCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/CoachStopCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CoachStopCode> <http://www.w3.org/2000/01/rdf-schema#label> "Coach Stop Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CountryCode
+<http://transport.data.gov.uk/def/naptan/CountryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/CountryCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CountryCode> <http://www.w3.org/2000/01/rdf-schema#label> "Country Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CrsCode
+<http://transport.data.gov.uk/def/naptan/CrsCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/CrsCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CrsCode> <http://www.w3.org/2000/01/rdf-schema#label> "CRS Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/IataCode
+<http://transport.data.gov.uk/def/naptan/IataCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/IataCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/IataCode> <http://www.w3.org/2000/01/rdf-schema#label> "IATA Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/MetroCode
+<http://transport.data.gov.uk/def/naptan/MetroCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/MetroCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/MetroCode> <http://www.w3.org/2000/01/rdf-schema#label> "CRS Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/NaptanCode
+<http://transport.data.gov.uk/def/naptan/NaptanCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/NaptanCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/NaptanCode> <http://www.w3.org/2000/01/rdf-schema#label> "Naptan Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/NationalFerryPortCode
+<http://transport.data.gov.uk/def/naptan/NationalFerryPortCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/NationalFerryPortCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/NationalFerryPortCode> <http://www.w3.org/2000/01/rdf-schema#label> "National Ferry Port Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/NptgDistrictCode
+<http://transport.data.gov.uk/def/naptan/NptgDistrictCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/NptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/NptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#label> "NPTG District Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/PlateCode
+<http://transport.data.gov.uk/def/naptan/PlateCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/PlateCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/PlateCode> <http://www.w3.org/2000/01/rdf-schema#label> "Plate Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/PlusbusZoneCode
+<http://transport.data.gov.uk/def/naptan/PlusbusZoneCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/PlusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/PlusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#label> "Plusbus Zone Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/RegionCode
+<http://transport.data.gov.uk/def/naptan/RegionCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/RegionCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/RegionCode> <http://www.w3.org/2000/01/rdf-schema#label> "Region Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/StopAreaCode
+<http://transport.data.gov.uk/def/naptan/StopAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/StopAreaCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The ATCO recommended coding for stop areas (groups) as defined in the NaPTAN specification."@en .
+<http://transport.data.gov.uk/def/naptan/StopAreaCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/StopAreaCode> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Area Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/StopAreaTypeCode
+<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Area Type Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/StopTypeCode
+<http://transport.data.gov.uk/def/naptan/StopTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/StopTypeCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/StopTypeCode> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Type Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TimingStatusCode
+<http://transport.data.gov.uk/def/naptan/TimingStatusCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/TimingStatusCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TimingStatusCode> <http://www.w3.org/2000/01/rdf-schema#label> "Timing Status Code"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TiplocCode
+<http://transport.data.gov.uk/def/naptan/TiplocCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://transport.data.gov.uk/def/naptan/TiplocCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TiplocCode> <http://www.w3.org/2000/01/rdf-schema#label> "TIPLOC Code"@en .
+# 
+# http://www.w3.org/2001/XMLSchema#duration
+<http://www.w3.org/2001/XMLSchema#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://transport.data.gov.uk/def/naptan/administrativeArea
+<http://transport.data.gov.uk/def/naptan/administrativeArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/administrativeArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/administrativeArea> <http://www.w3.org/2000/01/rdf-schema#label> "Adminstrative Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/airport
+<http://transport.data.gov.uk/def/naptan/airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/airport> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/AirStopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/childNptgLocality
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/childStopArea
+<http://transport.data.gov.uk/def/naptan/childStopArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/childStopArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopArea> .
+# 
+# http://transport.data.gov.uk/def/naptan/coachStop
+<http://transport.data.gov.uk/def/naptan/coachStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/coachStop> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/CoachStopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/compassPointBearing
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/BusStop> .
+# 
+# http://transport.data.gov.uk/def/naptan/country
+<http://transport.data.gov.uk/def/naptan/country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/country> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/ferryTerminal
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/FerryStopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/mainNptgLocality
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/metro
+<http://transport.data.gov.uk/def/naptan/metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/metro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/nptgDistrict
+<http://transport.data.gov.uk/def/naptan/nptgDistrict> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/nptgDistrict> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/nptgDistrict> <http://www.w3.org/2000/01/rdf-schema#label> "NPTG District"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/nptgLocality
+<http://transport.data.gov.uk/def/naptan/nptgLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/nptgLocality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/nptgLocality> <http://www.w3.org/2000/01/rdf-schema#label> "NPTG Locality"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/nptgLocalityCode
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/parentNptgLocality
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/parentStopArea
+<http://transport.data.gov.uk/def/naptan/parentStopArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/parentStopArea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopArea> .
+# 
+# http://transport.data.gov.uk/def/naptan/plusbusZone
+<http://transport.data.gov.uk/def/naptan/plusbusZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/plusbusZone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/plusbusZone> <http://www.w3.org/2000/01/rdf-schema#label> "Plusbus Zone"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/region
+<http://transport.data.gov.uk/def/naptan/region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/region> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/replacement
+<http://transport.data.gov.uk/def/naptan/replacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/replacement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/sourceLocalityType
+<http://transport.data.gov.uk/def/naptan/sourceLocalityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/station
+<http://transport.data.gov.uk/def/naptan/station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/station> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/status
+<http://transport.data.gov.uk/def/naptan/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/status> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the entity this annotates is available for use. Use of this attribute allows entities to be retired without deleting the details from the dataset."@en .
+<http://transport.data.gov.uk/def/naptan/status> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/status> <http://www.w3.org/2000/01/rdf-schema#label> "Status"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/stopArea
+<http://transport.data.gov.uk/def/naptan/stopArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/stopArea> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/stopArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/stopArea> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/stopPoint
+<http://transport.data.gov.uk/def/naptan/stopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/stopPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+<http://transport.data.gov.uk/def/naptan/stopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/stopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/stopStatus
+<http://transport.data.gov.uk/def/naptan/stopStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/stopStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopValidity> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopValidity
+<http://transport.data.gov.uk/def/naptan/stopValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/stopValidity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+# 
+# http://transport.data.gov.uk/def/naptan/validityInterval
+<http://transport.data.gov.uk/def/naptan/validityInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://transport.data.gov.uk/def/naptan/validityInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopValidity> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria> <http://www.w3.org/2000/01/rdf-schema#comment> "La parada del medio de transporte pertenece a una zona tarifaria."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria> <http://www.w3.org/2000/01/rdf-schema#label> "corona tarifaria"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://www.w3.org/2000/01/rdf-schema#domain> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad que indica que una zona de parada como las estaciones o intercambiadores tienen paradas que no est\u00E1n en la calle." .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene parada no en la calle"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://transport.data.gov.uk/def/naptan/StopArea> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad inversa de tiene parada." .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea> <http://www.w3.org/2000/01/rdf-schema#label> "L\u00EDnea a la que pertenece una parada"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador> <http://www.w3.org/2000/01/rdf-schema#comment> "El medio de transporte es gestionado por determinado operador."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador> <http://www.w3.org/2000/01/rdf-schema#label> "operador"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://transport.data.gov.uk/def/naptan/stopArea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://transport.data.gov.uk/def/naptan/stopPoint> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid9 <http://www.w3.org/2002/07/owl#unionOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://transport.data.gov.uk/def/naptan/StopArea> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/2000/01/rdf-schema#comment> "Parada que pertenece a una l\u00EDnea"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> <http://www.w3.org/2000/01/rdf-schema#label> "parada"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad inversa de tiene parada no en la calle." .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion> <http://www.w3.org/2000/01/rdf-schema#label> "Es parada no en la calle de "@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador> <http://www.w3.org/2000/01/rdf-schema#comment> "D\u00EDgito que indica el modo del intercambiador"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador> <http://www.w3.org/2000/01/rdf-schema#label> "Modo Intercambiador"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> <http://www.w3.org/2000/01/rdf-schema#comment> "Distintos sitios donde se encuentran las paradas, ya sean esta en la v\u00EDa p\u00FAblica o dentro de una estaci\u00F3n"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de parada"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://transport.data.gov.uk/def/naptan/administrativeAreaCode
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/atcoAreaCode
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/atcoCode
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/busStopTypeCode
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/cleardownCode
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/coachRef
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/countryCode
+<http://transport.data.gov.uk/def/naptan/countryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/crsRef
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/defaultWaitTime
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/degreesBearing
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/ferryRef
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/iataRef
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/localityCentre
+<http://transport.data.gov.uk/def/naptan/localityCentre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/metroRef
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/naptanCode
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/nptgDistrictCode
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/plateCode
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/plusbusZoneCode
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/regionCode
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopAreaCode
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopAreaTypeCode
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/stopTypeCode
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/timingStatusCode
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://transport.data.gov.uk/def/naptan/tiplocRef
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador> <http://purl.org/dc/terms/issued> "2014-05-03"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador> <http://www.w3.org/2000/01/rdf-schema#comment> "D\u00EDgito que indica el intercambiador"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador> <http://www.w3.org/2000/01/rdf-schema#label> "Intercambiador"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano> <http://www.w3.org/2000/01/rdf-schema#comment> "N\u00FAmero del sector urbano d\u00F3nde se encuentra la parada"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano> <http://www.w3.org/2000/01/rdf-schema#label> "Sector urbano"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela> <http://www.w3.org/2000/01/rdf-schema#comment> "Tesela en la que se encuentra la parada"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela> <http://www.w3.org/2000/01/rdf-schema#label> "Tesela"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://transport.data.gov.uk/def/naptan/AirAccessArea
+<http://transport.data.gov.uk/def/naptan/AirAccessArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/AirAccessArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/AirStopPoint> .
+<http://transport.data.gov.uk/def/naptan/AirAccessArea> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GAT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/AirAccessArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/AirAccessArea> <http://www.w3.org/2000/01/rdf-schema#label> "Air Airside Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/AirStopPoint
+<http://transport.data.gov.uk/def/naptan/AirStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/AirStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> .
+<http://transport.data.gov.uk/def/naptan/AirStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "An airport PTAN."@en .
+<http://transport.data.gov.uk/def/naptan/AirStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/AirStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Air Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/Airport
+<http://transport.data.gov.uk/def/naptan/Airport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/Airport> <http://www.w3.org/2000/01/rdf-schema#comment> "An airport."@en .
+<http://transport.data.gov.uk/def/naptan/Airport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/Airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/AirportBuilding
+<http://transport.data.gov.uk/def/naptan/AirportBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/AirportBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/AirportBuilding> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GAIR"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/AirportBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "Airport Building."@en .
+<http://transport.data.gov.uk/def/naptan/AirportBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/AirportBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Airport Building"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/AirportEntrance
+<http://transport.data.gov.uk/def/naptan/AirportEntrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/AirportEntrance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/AirStopPoint> .
+<http://transport.data.gov.uk/def/naptan/AirportEntrance> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "AIR"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/AirportEntrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/AirportEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "Airport Entrance"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea
+<http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BST"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea> <http://www.w3.org/2000/01/rdf-schema#label> "Bus / Coach Station Access Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusCoachStopPoint
+<http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+<http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Bus or Coach Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint
+<http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusStop> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint> <http://www.w3.org/2000/01/rdf-schema#label> "On street Bus / Coach / Tram Stop"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCS"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay> <http://www.w3.org/2000/01/rdf-schema#label> "Bus / Coach bay / stand / stance within Bus / Coach Stations"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCE"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "Bus / Coach Station Entrance"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "BCQ"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay> <http://www.w3.org/2000/01/rdf-schema#label> "Bus / Coach / Tram Variable Bay"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusOrCoachStation
+<http://transport.data.gov.uk/def/naptan/BusOrCoachStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusOrCoachStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/BusOrCoachStation> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GBCS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/BusOrCoachStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Bus / Coach Station."@en .
+<http://transport.data.gov.uk/def/naptan/BusOrCoachStation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusOrCoachStation> <http://www.w3.org/2000/01/rdf-schema#label> "Bus Or Coach Station"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/BusStop
+<http://transport.data.gov.uk/def/naptan/BusStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/BusStop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/BusStop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> .
+<http://transport.data.gov.uk/def/naptan/BusStop> <http://www.w3.org/2000/01/rdf-schema#comment> "A bus, coach or tram stop"@en .
+<http://transport.data.gov.uk/def/naptan/BusStop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/BusStop> <http://www.w3.org/2000/01/rdf-schema#label> "Bus Stop"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops
+<http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GCLS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#comment> "Clustered on-street Bus / Coach / Tram stops."@en .
+<http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#label> "Clustered On-Street Bus Stops"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CoachCoverage
+<http://transport.data.gov.uk/def/naptan/CoachCoverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/CoachCoverage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/CoachCoverage> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GCCH"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/CoachCoverage> <http://www.w3.org/2000/01/rdf-schema#comment> "Coach Service Coverage."@en .
+<http://transport.data.gov.uk/def/naptan/CoachCoverage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CoachCoverage> <http://www.w3.org/2000/01/rdf-schema#label> "Coach Coverage"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CoachStationPoint
+<http://transport.data.gov.uk/def/naptan/CoachStationPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/CoachStationPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/CoachStationPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> .
+<http://transport.data.gov.uk/def/naptan/CoachStationPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A coach station PTAN."@en .
+<http://transport.data.gov.uk/def/naptan/CoachStationPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CoachStationPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Bus and Coach Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CoachStop
+<http://transport.data.gov.uk/def/naptan/CoachStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/CoachStop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CoachStop> <http://www.w3.org/2000/01/rdf-schema#label> "Coach Stop"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CoachStopPoint
+<http://transport.data.gov.uk/def/naptan/CoachStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/CoachStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/CoachStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CoachStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Coach Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/CustomBusStop
+<http://transport.data.gov.uk/def/naptan/CustomBusStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/CustomBusStop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusStop> .
+<http://transport.data.gov.uk/def/naptan/CustomBusStop> <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "CUS"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/CustomBusStop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/CustomBusStop> <http://www.w3.org/2000/01/rdf-schema#label> "Custom (unmarked, or only marked on road)"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/FerryBerth
+<http://transport.data.gov.uk/def/naptan/FerryBerth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/FerryBerth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/FerryStopPoint> .
+<http://transport.data.gov.uk/def/naptan/FerryBerth> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "FBT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/FerryBerth> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/FerryBerth> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry Berth"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/FerryDockAccessArea
+<http://transport.data.gov.uk/def/naptan/FerryDockAccessArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/FerryDockAccessArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/FerryStopPoint> .
+<http://transport.data.gov.uk/def/naptan/FerryDockAccessArea> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "FER"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/FerryDockAccessArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/FerryDockAccessArea> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry / Dock Berth Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/FerryStopPoint
+<http://transport.data.gov.uk/def/naptan/FerryStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/FerryStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> .
+<http://transport.data.gov.uk/def/naptan/FerryStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A ferry terminal or dock PTAN."@en .
+<http://transport.data.gov.uk/def/naptan/FerryStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/FerryStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/FerryTerminal
+<http://transport.data.gov.uk/def/naptan/FerryTerminal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry Terminal"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance
+<http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/FerryStopPoint> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "FTD"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry Terminal / Dock Entrance"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding
+<http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GFTD"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "Ferry Terminal / Dock Building."@en .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry Terminal Or Dock Building"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/FlexibleBusStop
+<http://transport.data.gov.uk/def/naptan/FlexibleBusStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/FlexibleBusStop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusStop> .
+<http://transport.data.gov.uk/def/naptan/FlexibleBusStop> <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "FLX"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/FlexibleBusStop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/FlexibleBusStop> <http://www.w3.org/2000/01/rdf-schema#label> "Flexible zone"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/HailAndRideBusStop
+<http://transport.data.gov.uk/def/naptan/HailAndRideBusStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/HailAndRideBusStop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusStop> .
+<http://transport.data.gov.uk/def/naptan/HailAndRideBusStop> <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "HAR"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/HailAndRideBusStop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/HailAndRideBusStop> <http://www.w3.org/2000/01/rdf-schema#label> "Hail and Ride - requires Hail and Ride section"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/MarkedBusStop
+<http://transport.data.gov.uk/def/naptan/MarkedBusStop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/MarkedBusStop> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusStop> .
+<http://transport.data.gov.uk/def/naptan/MarkedBusStop> <http://transport.data.gov.uk/def/naptan/busStopTypeCode> "MKD"^^<http://transport.data.gov.uk/def/naptan/BusStopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/MarkedBusStop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/MarkedBusStop> <http://www.w3.org/2000/01/rdf-schema#label> "Marked (pole, shelter etc)"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/Metro
+<http://transport.data.gov.uk/def/naptan/Metro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/Metro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/Metro> <http://www.w3.org/2000/01/rdf-schema#label> "Tram / Metro / Underground Station"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/MetroStopPoint
+<http://transport.data.gov.uk/def/naptan/MetroStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/MetroStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> .
+<http://transport.data.gov.uk/def/naptan/MetroStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A metro, tram or underground station PTAN."@en .
+<http://transport.data.gov.uk/def/naptan/MetroStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/MetroStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/MultimodeInterchange
+<http://transport.data.gov.uk/def/naptan/MultimodeInterchange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/MultimodeInterchange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/MultimodeInterchange> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GMLT"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/MultimodeInterchange> <http://www.w3.org/2000/01/rdf-schema#comment> "Multimode Interchange."@en .
+<http://transport.data.gov.uk/def/naptan/MultimodeInterchange> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/MultimodeInterchange> <http://www.w3.org/2000/01/rdf-schema#label> "Multimode Interchange"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/OffStreetStopPoint
+<http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+<http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Station, interchange or other off-street access point"@en .
+<http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Off Street Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/OnStreetStopPoint
+<http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopPoint> .
+<http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "On street access point"@en .
+<http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "On Street Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/OtherPoint
+<http://transport.data.gov.uk/def/naptan/OtherPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/OtherPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/OtherPoint> <http://transport.data.gov.uk/def/naptan/timingStatusCode> "OTH"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> .
+<http://transport.data.gov.uk/def/naptan/OtherPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "This stop is not part of the service registration and is not liable to inspections or enforcement; it is not expected to be used as part of the timetable."@en .
+<http://transport.data.gov.uk/def/naptan/OtherPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/OtherPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Other Bus Stop"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/OtherStructure
+<http://transport.data.gov.uk/def/naptan/OtherStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/OtherStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/OtherStructure> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GOTH"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/OtherStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Other Structure."@en .
+<http://transport.data.gov.uk/def/naptan/OtherStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/OtherStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Other Structure"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops
+<http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GPBS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#comment> "Paired on-street Bus / Coach / Tram stops."@en .
+<http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops> <http://www.w3.org/2000/01/rdf-schema#label> "Paired On-Street Bus Stops"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/PrinciplePoint
+<http://transport.data.gov.uk/def/naptan/PrinciplePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/PrinciplePoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/PrinciplePoint> <http://transport.data.gov.uk/def/naptan/timingStatusCode> "PPT"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> .
+<http://transport.data.gov.uk/def/naptan/PrinciplePoint> <http://www.w3.org/2000/01/rdf-schema#comment> "This stop is part of the service registration and is liable to inspections and enforcement."@en .
+<http://transport.data.gov.uk/def/naptan/PrinciplePoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/PrinciplePoint> <http://www.w3.org/2000/01/rdf-schema#label> "Principal Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint
+<http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint> <http://transport.data.gov.uk/def/naptan/timingStatusCode> "PTP"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> .
+<http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "This stop is a Principal Point which is expected to be also used as a timing point within a timetable."@en .
+<http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Principal and Time Info Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/RailAccessArea
+<http://transport.data.gov.uk/def/naptan/RailAccessArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/RailAccessArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+<http://transport.data.gov.uk/def/naptan/RailAccessArea> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "RLY"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/RailAccessArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/RailAccessArea> <http://www.w3.org/2000/01/rdf-schema#label> "Rail Platform Access Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/RailPlatform
+<http://transport.data.gov.uk/def/naptan/RailPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/RailPlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+<http://transport.data.gov.uk/def/naptan/RailPlatform> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "RPL"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/RailPlatform> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/RailPlatform> <http://www.w3.org/2000/01/rdf-schema#label> "Rail Platform"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/RailStationEntrance
+<http://transport.data.gov.uk/def/naptan/RailStationEntrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/RailStationEntrance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+<http://transport.data.gov.uk/def/naptan/RailStationEntrance> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "RSE"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/RailStationEntrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/RailStationEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "Rail Station Entrance"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/RailStopPoint
+<http://transport.data.gov.uk/def/naptan/RailStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/RailStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OffStreetStopPoint> .
+<http://transport.data.gov.uk/def/naptan/RailStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A railway station PTAN."@en .
+<http://transport.data.gov.uk/def/naptan/RailStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/RailStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Rail Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/RailwayStation
+<http://transport.data.gov.uk/def/naptan/RailwayStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/RailwayStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/RailwayStation> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GRLS"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/RailwayStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Railway station."@en .
+<http://transport.data.gov.uk/def/naptan/RailwayStation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/RailwayStation> <http://www.w3.org/2000/01/rdf-schema#label> "Railway Station"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/SharedTaxiRank
+<http://transport.data.gov.uk/def/naptan/SharedTaxiRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/SharedTaxiRank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/TaxiStopPoint> .
+<http://transport.data.gov.uk/def/naptan/SharedTaxiRank> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "STR"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/SharedTaxiRank> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/SharedTaxiRank> <http://www.w3.org/2000/01/rdf-schema#label> "Shared Taxi Rank (head of)"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/Station
+<http://transport.data.gov.uk/def/naptan/Station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/Station> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/Station> <http://www.w3.org/2000/01/rdf-schema#label> "Rail Station"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/StopArea
+<http://transport.data.gov.uk/def/naptan/StopArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/StopArea> <http://www.w3.org/2000/01/rdf-schema#comment> "A grouping of adjacent NaPTAN stops."@en .
+<http://transport.data.gov.uk/def/naptan/StopArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/StopArea> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/StopPoint
+<http://transport.data.gov.uk/def/naptan/StopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/StopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A NaPTAN stop definition."@en .
+<http://transport.data.gov.uk/def/naptan/StopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/StopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/StopStatus
+<http://transport.data.gov.uk/def/naptan/StopStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://transport.data.gov.uk/def/naptan/StopValidity
+<http://transport.data.gov.uk/def/naptan/StopValidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/StopValidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of period for stop activity."@en .
+<http://transport.data.gov.uk/def/naptan/StopValidity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/StopValidity> <http://www.w3.org/2000/01/rdf-schema#label> "Period of Stop Validity"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TaxiRank
+<http://transport.data.gov.uk/def/naptan/TaxiRank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/TaxiRank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/TaxiStopPoint> .
+<http://transport.data.gov.uk/def/naptan/TaxiRank> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "TXR"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/TaxiRank> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TaxiRank> <http://www.w3.org/2000/01/rdf-schema#label> "Taxi Rank (head of)"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TaxiStopPoint
+<http://transport.data.gov.uk/def/naptan/TaxiStopPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/TaxiStopPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> .
+<http://transport.data.gov.uk/def/naptan/TaxiStopPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A taxi rank"@en .
+<http://transport.data.gov.uk/def/naptan/TaxiStopPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TaxiStopPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Taxi Stop Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TimeInfoPoint
+<http://transport.data.gov.uk/def/naptan/TimeInfoPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/TimeInfoPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://transport.data.gov.uk/def/naptan/TimeInfoPoint> <http://transport.data.gov.uk/def/naptan/timingStatusCode> "TIP"^^<http://transport.data.gov.uk/def/naptan/TimingStatusCode> .
+<http://transport.data.gov.uk/def/naptan/TimeInfoPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "This stop is not part of the service registration and is not liable to inspections or enforcement, however it is expected to be used within a timetable to identify a timing point which will not be a Principal Point."@en .
+<http://transport.data.gov.uk/def/naptan/TimeInfoPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TimeInfoPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Time Info Point"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation
+<http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/StopArea> .
+<http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "GTMU"^^<http://transport.data.gov.uk/def/naptan/StopAreaTypeCode> .
+<http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Tram / Metro / Underground Station."@en .
+<http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> <http://www.w3.org/2000/01/rdf-schema#label> "Tram Metro Or Underground Station"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "MET"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea> <http://www.w3.org/2000/01/rdf-schema#label> "Tram / Metro / Underground Access Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "PLT"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform> <http://www.w3.org/2000/01/rdf-schema#label> "Metro and Underground Platform Access Area"@en .
+# 
+# http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance> <http://transport.data.gov.uk/def/naptan/stopTypeCode> "TMU"^^<http://transport.data.gov.uk/def/naptan/StopTypeCode> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "Tram / Metro / Underground Entrance"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusCoachStopPoint> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/OnStreetStopPoint> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de parada de autob\u00FAs. Este tipo de paradas se encuentran dentro de los intercambiadores o estaciones de autob\u00FAs" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena> <http://www.w3.org/2000/01/rdf-schema#label> "D\u00E1rsena"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusOrCoachStation> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2000/01/rdf-schema#comment> "Una estaci\u00F3n de autob\u00FAs" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus> <http://www.w3.org/2000/01/rdf-schema#label> "Estaci\u00F3n de autob\u00FAs"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/RailwayStation> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/2000/01/rdf-schema#comment> "Una estaci\u00F3n de cercan\u00EDas" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias> <http://www.w3.org/2000/01/rdf-schema#label> "Estaci\u00F3n de Cercan\u00EDas"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://www.w3.org/2000/01/rdf-schema#comment> "Una estaci\u00F3n de metro" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro> <http://www.w3.org/2000/01/rdf-schema#label> "Estaci\u00F3n de metro"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#comment> "Una estaci\u00F3n de metro ligero" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#label> "Estaci\u00F3n de metro ligero"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/MultimodeInterchange> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de instalaciones que permite a los pasajeros la comunicaci\u00F3n y enlace entre diversos medios de transporte [fuente: Diccionario de la Real Academia (DRAE) 2014]" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador> <http://www.w3.org/2000/01/rdf-schema#label> "Intercambiador"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> <http://www.w3.org/2000/01/rdf-schema#comment> "Son las l\u00EDneas de los medios de transporte" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> <http://www.w3.org/2000/01/rdf-schema#label> "L\u00EDnea"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa una l\u00EDnea de autob\u00FAs" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus> <http://www.w3.org/2000/01/rdf-schema#label> "L\u00EDnea de bus"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa una l\u00EDnea de metro" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro> <http://www.w3.org/2000/01/rdf-schema#label> "L\u00EDnea de metro"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa una l\u00EDnea de metro ligero" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero> <http://www.w3.org/2000/01/rdf-schema#label> "L\u00EDnea de metro ligero"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa una l\u00EDnea de tranv\u00EDa" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia> <http://www.w3.org/2000/01/rdf-schema#label> "L\u00EDnea de tranv\u00EDa"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que representa una l\u00EDnea de tren (por ejemplo, de Cercan\u00EDas)" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren> <http://www.w3.org/2000/01/rdf-schema#label> "L\u00EDnea de tren"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusStop> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de parada de autob\u00FAs. Protege a las personas de la lluvia y del fr\u00EDo" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina> <http://www.w3.org/2000/01/rdf-schema#label> "Marquesina"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> "Operador de los medios de transporte"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> "Operador de los medios de transporte."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#label> "Operador"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/RailStopPoint> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://transport.data.gov.uk/def/naptan/airport> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://www.w3.org/2000/01/rdf-schema#comment> "Una parada de cercan\u00EDas" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias> <http://www.w3.org/2000/01/rdf-schema#label> "Parada de cercan\u00EDas"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> <http://www.w3.org/2002/07/owl#disjointWith> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> <http://www.w3.org/2000/01/rdf-schema#comment> "Una parada de metro" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro> <http://www.w3.org/2000/01/rdf-schema#label> "Parada de metro"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/MetroStopPoint> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> .
+_:genid17 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#comment> "Una parada de metro ligero" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero> <http://www.w3.org/2000/01/rdf-schema#label> "Parada de metro ligero"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://transport.data.gov.uk/def/naptan/BusStop> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada> .
+_:genid18 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> <http://purl.org/dc/terms/issued> "2014-04-29"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de parada de autob\u00FAs" .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus> <http://www.w3.org/2000/01/rdf-schema#label> "Poste"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria> <http://www.w3.org/2000/01/rdf-schema#comment> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria> <http://www.w3.org/2000/01/rdf-schema#comment> "Zona que permite definir la tarifa del sistema de transporte."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria> <http://www.w3.org/2000/01/rdf-schema#label> "Zona Tarifaria"@es .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the area."@en .
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Area Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/airport> <http://www.w3.org/2000/01/rdf-schema#comment> "Airport associated with a stop point."@en .
+<http://transport.data.gov.uk/def/naptan/airport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/airport> <http://www.w3.org/2000/01/rdf-schema#label> "Airport"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#comment> "ATCO code for area."@en .
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/atcoAreaCode> <http://www.w3.org/2000/01/rdf-schema#label> "ATCO Area Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Full NaPTAN stop identifier that uniquely identifies the stop within the UK."@en .
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/atcoCode> <http://www.w3.org/2000/01/rdf-schema#label> "ATCO Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/busStopTypeCode> <http://www.w3.org/2000/01/rdf-schema#label> "Bus Stop Type Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/childNptgLocality> <http://www.w3.org/2000/01/rdf-schema#label> "Child NPTG Locality"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/childStopArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/childStopArea> <http://www.w3.org/2000/01/rdf-schema#label> "Child Stop Area"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/2000/01/rdf-schema#comment> "A 20 bit number used for wireless cleardown of stop displays by some AVL systems. Number format defined by RTIG."@en .
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/cleardownCode> <http://www.w3.org/2000/01/rdf-schema#label> "Cleardown Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Nationally unique identifier for coach Stop Point used by a coach company. (Including for example stop codes used by the National Express Group)."@en .
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/coachRef> <http://www.w3.org/2000/01/rdf-schema#label> "Coach Stop Point Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/coachStop> <http://www.w3.org/2000/01/rdf-schema#comment> "Coach stop associated with a stop point."@en .
+<http://transport.data.gov.uk/def/naptan/coachStop> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/coachStop> <http://www.w3.org/2000/01/rdf-schema#label> "Coach Stop"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/2000/01/rdf-schema#comment> "Eight point compass bearing (N, S, E, W etc)"@en .
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/compassPointBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Compass Point Bearing"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/countryCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/countryCode> <http://www.w3.org/2000/01/rdf-schema#label> "Country Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Three letter Computer Reservation System code identifying a station. e.g. KGX."@en .
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/crsRef> <http://www.w3.org/2000/01/rdf-schema#label> "CRS Reference"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/defaultWaitTime> <http://www.w3.org/2000/01/rdf-schema#label> "Default Wait Time"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/2000/01/rdf-schema#comment> "Bearing in degrees"@en .
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/degreesBearing> <http://www.w3.org/2000/01/rdf-schema#label> "Degrees Bearing"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/2000/01/rdf-schema#comment> "National Ferry code for ferry port."@en .
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/ferryRef> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry Reference"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/ferryTerminal> <http://www.w3.org/2000/01/rdf-schema#label> "Ferry Terminal"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/2000/01/rdf-schema#comment> "International Air Transport Association code for the airport."@en .
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/iataRef> <http://www.w3.org/2000/01/rdf-schema#label> "IATA Reference"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/localityCentre> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether the locality is a centre or not."@en .
+<http://transport.data.gov.uk/def/naptan/localityCentre> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/localityCentre> <http://www.w3.org/2000/01/rdf-schema#label> "Locality Centre"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> <http://www.w3.org/2000/01/rdf-schema#comment> "NPTG Localities for which the stop is a main interchange point, that is one of the main PTANs for accessing the network."@en .
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/mainNptgLocality> <http://www.w3.org/2000/01/rdf-schema#label> "Main NPTG Locality"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/metro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/metro> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Station"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Metro code for underground station."@en .
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/metroRef> <http://www.w3.org/2000/01/rdf-schema#label> "Metro Reference"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Short NaPTAN code for passengers to use when uniquely identifying the stop by SMS and other self-service channels."@en .
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/naptanCode> <http://www.w3.org/2000/01/rdf-schema#label> "NAPTAN Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the district."@en .
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/nptgDistrictCode> <http://www.w3.org/2000/01/rdf-schema#label> "NPTG District Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the locality."@en .
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/nptgLocalityCode> <http://www.w3.org/2000/01/rdf-schema#label> "NPTG Locality Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent locality. Reference to another locality that contains the child locality completely. Must not be cyclic."@en .
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/parentNptgLocality> <http://www.w3.org/2000/01/rdf-schema#label> "Parent NPTG Locality"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/parentStopArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Code that identifies any parent stop area of the area. Many levels of parent hierarchy are allowed."@en .
+<http://transport.data.gov.uk/def/naptan/parentStopArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/parentStopArea> <http://www.w3.org/2000/01/rdf-schema#label> "Parent Stop Area"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Plate number for stop. An arbitrary asset number that may be placed on stop to identify it."@en .
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/plateCode> <http://www.w3.org/2000/01/rdf-schema#label> "Plate Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the Plusbus Zone."@en .
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/plusbusZoneCode> <http://www.w3.org/2000/01/rdf-schema#label> "Plusbus Zone Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier of the region."@en .
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/regionCode> <http://www.w3.org/2000/01/rdf-schema#label> "Region Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/replacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Stop that the stop has been transferred to."@en .
+<http://transport.data.gov.uk/def/naptan/replacement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/replacement> <http://www.w3.org/2000/01/rdf-schema#label> "Replacement Stop Point"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/sourceLocalityType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/sourceLocalityType> <http://www.w3.org/2000/01/rdf-schema#label> "Source Locality Type"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/station> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/station> <http://www.w3.org/2000/01/rdf-schema#label> "Station"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Code that uniquely identifies the stop area within the UK."@en .
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/stopAreaCode> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Area Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/stopAreaTypeCode> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Area Type Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/stopStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/stopStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Status"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/stopTypeCode> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Type Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/stopValidity> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of period for stop activity."@en .
+<http://transport.data.gov.uk/def/naptan/stopValidity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/stopValidity> <http://www.w3.org/2000/01/rdf-schema#label> "Stop Validity"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/timingStatusCode> <http://www.w3.org/2000/01/rdf-schema#label> "Timing Status Code"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/2000/01/rdf-schema#comment> "TIming Point LOcation Code . Character code 4-6 alphanumeric characters e.g. CHST, KNGX, KNGXBAL. Non-rail locations may also have TIPLOCs."@en .
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/tiplocRef> <http://www.w3.org/2000/01/rdf-schema#label> "TIPLOC Reference"@en .
+# 
+<http://transport.data.gov.uk/def/naptan/validityInterval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://transport.data.gov.uk/def/naptan> .
+<http://transport.data.gov.uk/def/naptan/validityInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Validity Interval"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

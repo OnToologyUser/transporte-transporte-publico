@@ -1,0 +1,589 @@
+{
+  "@context" : {
+    "BusCoachTramStationEntrance" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachTramStationEntrance"
+    },
+    "ferryTerminal" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/ferryTerminal",
+      "@type" : "@id"
+    },
+    "countryCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/countryCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/CountryCode"
+    },
+    "parada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#parada",
+      "@type" : "@id"
+    },
+    "parentNptgLocality" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/parentNptgLocality",
+      "@type" : "@id"
+    },
+    "coachStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/coachStop",
+      "@type" : "@id"
+    },
+    "FerryDockAccessArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FerryDockAccessArea"
+    },
+    "validityInterval" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/validityInterval",
+      "@type" : "@id"
+    },
+    "EstacionDeCercanias" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeCercanias"
+    },
+    "stopAreaTypeCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopAreaTypeCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/StopAreaTypeCode"
+    },
+    "FerryTerminalDockEntrance" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FerryTerminalDockEntrance"
+    },
+    "cleardownCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/cleardownCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/CleardownCode"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "ferryRef" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/ferryRef",
+      "@type" : "http://transport.data.gov.uk/def/naptan/NationalFerryPortCode"
+    },
+    "browse" : {
+      "@id" : "http://usefulinc.com/ns/doap#browse"
+    },
+    "nptgDistrictCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/nptgDistrictCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/NptgDistrictCode"
+    },
+    "paradaEnIntercambiador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnIntercambiador",
+      "@type" : "@id"
+    },
+    "primaryTopic" : {
+      "@id" : "http://xmlns.com/foaf/0.1/primaryTopic"
+    },
+    "EstacionDeMetroLigero" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetroLigero"
+    },
+    "crsRef" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/crsRef",
+      "@type" : "http://transport.data.gov.uk/def/naptan/CrsCode"
+    },
+    "linea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#linea",
+      "@type" : "@id"
+    },
+    "EstacionDeMetro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeMetro"
+    },
+    "landmark" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/landmark"
+    },
+    "country" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/country",
+      "@type" : "@id"
+    },
+    "Linea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Linea"
+    },
+    "bearing" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/bearing"
+    },
+    "cabeceraLinea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#cabeceraLinea",
+      "@type" : "@id"
+    },
+    "Intercambiador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Intercambiador"
+    },
+    "indicator" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/indicator"
+    },
+    "tipoParada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tipoParada",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "CustomBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/CustomBusStop"
+    },
+    "TimeInfoPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TimeInfoPoint"
+    },
+    "ParadaDeCercanias" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeCercanias"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "sourceLocalityType" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/sourceLocalityType",
+      "@type" : "@id"
+    },
+    "MarkedBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/MarkedBusStop"
+    },
+    "terminalLinea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#terminalLinea",
+      "@type" : "@id"
+    },
+    "TramMetroUndergroundStationEntrance" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroUndergroundStationEntrance"
+    },
+    "sectorUrbano" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#sectorUrbano",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "plateCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/plateCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/PlateCode"
+    },
+    "AirAccessArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/AirAccessArea"
+    },
+    "busStopTypeCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/busStopTypeCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/BusStopTypeCode"
+    },
+    "nptgLocality" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/nptgLocality",
+      "@type" : "@id"
+    },
+    "TramMetroOrUndergroundStation" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroOrUndergroundStation"
+    },
+    "FerryStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FerryStopPoint"
+    },
+    "OffStreetStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/OffStreetStopPoint"
+    },
+    "isPrimaryTopicOf" : {
+      "@id" : "http://xmlns.com/foaf/0.1/isPrimaryTopicOf"
+    },
+    "isContainedBy" : {
+      "@id" : "http://data.ordnancesurvey.co.uk/ontology/spatialrelations/isContainedBy"
+    },
+    "OtherPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/OtherPoint"
+    },
+    "replacement" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/replacement",
+      "@type" : "@id"
+    },
+    "plusbusZoneCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/plusbusZoneCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/PlusbusZoneCode"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "contains" : {
+      "@id" : "http://data.ordnancesurvey.co.uk/ontology/spatialrelations/contains"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "isFormatOf" : {
+      "@id" : "http://purl.org/dc/terms/isFormatOf"
+    },
+    "Marquesina" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Marquesina"
+    },
+    "defaultWaitTime" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/defaultWaitTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#duration"
+    },
+    "stopTypeCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopTypeCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/StopTypeCode"
+    },
+    "AirportBuilding" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/AirportBuilding"
+    },
+    "compassPointBearing" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/compassPointBearing",
+      "@type" : "@id"
+    },
+    "StopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/StopPoint"
+    },
+    "repository" : {
+      "@id" : "http://usefulinc.com/ns/doap#repository"
+    },
+    "administrativeAreaCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/administrativeAreaCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/AdministrativeAreaCode"
+    },
+    "ZonaTarifaria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ZonaTarifaria"
+    },
+    "TaxiStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TaxiStopPoint"
+    },
+    "StopValidity" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/StopValidity"
+    },
+    "homepage" : {
+      "@id" : "http://usefulinc.com/ns/doap#homepage"
+    },
+    "wiki" : {
+      "@id" : "http://usefulinc.com/ns/doap#wiki"
+    },
+    "Airport" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/Airport"
+    },
+    "revision" : {
+      "@id" : "http://usefulinc.com/ns/doap#revision"
+    },
+    "naptanCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/naptanCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/NaptanCode"
+    },
+    "ClusteredOnStreetBusStops" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/ClusteredOnStreetBusStops"
+    },
+    "TramMetroUndergroundPlatform" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroUndergroundPlatform"
+    },
+    "FerryTerminalOrDockBuilding" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FerryTerminalOrDockBuilding"
+    },
+    "iataRef" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/iataRef",
+      "@type" : "http://transport.data.gov.uk/def/naptan/IataCode"
+    },
+    "LineaTranvia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTranvia"
+    },
+    "coronaTarifaria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#coronaTarifaria",
+      "@type" : "@id"
+    },
+    "OnStreetStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/OnStreetStopPoint"
+    },
+    "ParadaDeMetroLigero" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetroLigero"
+    },
+    "childNptgLocality" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/childNptgLocality",
+      "@type" : "@id"
+    },
+    "LineaMetro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetro"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "parentStopArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/parentStopArea",
+      "@type" : "@id"
+    },
+    "AirportEntrance" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/AirportEntrance"
+    },
+    "PairedOnStreetBusStops" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/PairedOnStreetBusStops"
+    },
+    "paradaEnEstacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#paradaEnEstacion",
+      "@type" : "@id"
+    },
+    "town" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/town"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "RailStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailStopPoint"
+    },
+    "coachRef" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/coachRef",
+      "@type" : "http://transport.data.gov.uk/def/naptan/CoachStopCode"
+    },
+    "degreesBearing" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/degreesBearing",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "BusCoachStationAccessArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachStationAccessArea"
+    },
+    "timingStatusCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/timingStatusCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/TimingStatusCode"
+    },
+    "releaseOf" : {
+      "@id" : "http://usefulinc.com/ns/doap#releaseOf"
+    },
+    "CoachStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/CoachStop"
+    },
+    "atcoAreaCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/atcoAreaCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/AtcoAreaCode"
+    },
+    "location" : {
+      "@id" : "http://usefulinc.com/ns/doap#location"
+    },
+    "suburb" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/suburb"
+    },
+    "HailAndRideBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/HailAndRideBusStop"
+    },
+    "regionCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/regionCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/RegionCode"
+    },
+    "nptgDistrict" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/nptgDistrict",
+      "@type" : "@id"
+    },
+    "BusCoachTramOnStreetPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachTramOnStreetPoint"
+    },
+    "LineaMetroLigero" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaMetroLigero"
+    },
+    "TramMetroUndergroundAccessArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TramMetroUndergroundAccessArea"
+    },
+    "status" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/status",
+      "@type" : "@id"
+    },
+    "FerryBerth" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FerryBerth"
+    },
+    "region" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/region",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "stopAreaCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopAreaCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/StopAreaCode"
+    },
+    "MetroStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/MetroStopPoint"
+    },
+    "BusCoachStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachStopPoint"
+    },
+    "TaxiRank" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/TaxiRank"
+    },
+    "PrinciplePoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/PrinciplePoint"
+    },
+    "atcoCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/atcoCode",
+      "@type" : "http://transport.data.gov.uk/def/naptan/AtcoCode"
+    },
+    "RailwayStation" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailwayStation"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "mainNptgLocality" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/mainNptgLocality",
+      "@type" : "@id"
+    },
+    "AirStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/AirStopPoint"
+    },
+    "CoachStationPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/CoachStationPoint"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "intercambiador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#intercambiador",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "PrincipleTimingPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/PrincipleTimingPoint"
+    },
+    "RailAccessArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailAccessArea"
+    },
+    "BusCoachTramStationVariableBay" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachTramStationVariableBay"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "stopStatus" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopStatus",
+      "@type" : "@id"
+    },
+    "BusOrCoachStation" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusOrCoachStation"
+    },
+    "OtherStructure" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/OtherStructure"
+    },
+    "metroRef" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/metroRef",
+      "@type" : "http://transport.data.gov.uk/def/naptan/MetroCode"
+    },
+    "tesela" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#tesela",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "StopArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/StopArea"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "administrativeArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/administrativeArea",
+      "@type" : "@id"
+    },
+    "tiplocRef" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/tiplocRef",
+      "@type" : "http://transport.data.gov.uk/def/naptan/TiplocCode"
+    },
+    "airport" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/airport",
+      "@type" : "@id"
+    },
+    "RailPlatform" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailPlatform"
+    },
+    "Station" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/Station"
+    },
+    "EstacionDeAutobus" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#EstacionDeAutobus"
+    },
+    "nptgLocalityCode" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/nptgLocalityCode",
+      "@type" : "@id"
+    },
+    "Darsena" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Darsena"
+    },
+    "street" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/street"
+    },
+    "FerryTerminal" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FerryTerminal"
+    },
+    "estacionTieneParada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#estacionTieneParada",
+      "@type" : "@id"
+    },
+    "crossing" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/crossing"
+    },
+    "CoachStopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/CoachStopPoint"
+    },
+    "operador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#operador",
+      "@type" : "@id"
+    },
+    "childStopArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/childStopArea",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "RailStationEntrance" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/RailStationEntrance"
+    },
+    "stopValidity" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopValidity",
+      "@type" : "@id"
+    },
+    "metro" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/metro",
+      "@type" : "@id"
+    },
+    "BusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusStop"
+    },
+    "localityCentre" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/localityCentre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "SharedTaxiRank" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/SharedTaxiRank"
+    },
+    "FlexibleBusStop" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/FlexibleBusStop"
+    },
+    "plusbusZone" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/plusbusZone",
+      "@type" : "@id"
+    },
+    "LineaBus" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaBus"
+    },
+    "station" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/station",
+      "@type" : "@id"
+    },
+    "StopStatus" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/StopStatus"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "MultimodeInterchange" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/MultimodeInterchange"
+    },
+    "PosteParadaDeBus" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#PosteParadaDeBus"
+    },
+    "LineaTren" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#LineaTren"
+    },
+    "stopArea" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopArea",
+      "@type" : "@id"
+    },
+    "bug-database" : {
+      "@id" : "http://usefulinc.com/ns/doap#bug-database"
+    },
+    "stopPoint" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/stopPoint",
+      "@type" : "@id"
+    },
+    "CoachCoverage" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/CoachCoverage"
+    },
+    "BusCoachTramStationBay" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachTramStationBay"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "format" : {
+      "@id" : "http://purl.org/dc/terms/format"
+    },
+    "ParadaDeMetro" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#ParadaDeMetro"
+    },
+    "Metro" : {
+      "@id" : "http://transport.data.gov.uk/def/naptan/Metro"
+    },
+    "Operador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador"
+    }
+  }
+}
