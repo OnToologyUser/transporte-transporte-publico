@@ -29,6 +29,7 @@
         <terms:hasFormat xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.owl</terms:hasFormat>
         <terms:issued xml:lang="es">2014-04-29</terms:issued>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-04</terms:modified>
+        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estp</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="es">Este vocabulario se utiliza para la descripción del dominio de la infraestructura de los medios de transporte. Esta ontología reutliza elementos de otras ontologías como la ontología de transportes Naptan.</rdfs:comment>
         <rdfs:comment xml:lang="es">Ontología sobre infraestructuras de transporte</rdfs:comment>
@@ -42,7 +43,7 @@ Además se incluyeron las siguientes propiedades:
 - operador 
 - coronaTarifaria
 
-Se ha omitido de la descripción de la ontología la parte en la que se mencionaba que se reutiliza términos de una ontología sobre unidades territoriales.</owl:versionInfo>
+Se ha omitido de la descripción de la ontología la parte en la que se mencionaba la reutilización de términos de una ontología sobre unidades territoriales.</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -105,6 +106,13 @@ Se ha omitido de la descripción de la ontología la parte en la que se menciona
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
@@ -2414,7 +2422,6 @@ Se ha omitido de la descripción de la ontología la parte en la que se menciona
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador">
         <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico"/>
-        <rdfs:comment xml:lang="es">Operador de los medios de transporte</rdfs:comment>
         <rdfs:comment xml:lang="es">Operador de los medios de transporte.</rdfs:comment>
         <rdfs:label xml:lang="es">Operador</rdfs:label>
     </owl:Class>
