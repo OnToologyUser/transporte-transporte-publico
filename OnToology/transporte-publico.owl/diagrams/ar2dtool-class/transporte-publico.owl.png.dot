@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "4cfa7726:163ceff8b65:-7ff1" "estrn:Intercambiador" "estrn:EstacionDeMetroLigero" "naptan:AirStopPoint" "naptan:Station" "naptan:FerryStopPoint" "estrn:LineaMetro" "naptan:RailStopPoint" "naptan:FerryTerminal" "4cfa7726:163ceff8b65:-7ff7" "naptan:BusStop" "naptan:StopPoint" "estrn:Linea" "estrn:LineaTren" "estrn:LineaMetroLigero" "4cfa7726:163ceff8b65:-7ffc" "naptan:CoachStopPoint" "estrn:Marquesina" "estrn:Darsena" "naptan:StopValidity" "naptan:StopArea" "estrn:ParadaDeMetroLigero" "estrn:EstacionDeCercanias" "naptan:Metro" "skos:Concept" "4cfa7726:163ceff8b65:-7ff4" "naptan:CoachStop" "estrn:EstacionDeMetro" "estrn:EstacionDeAutobus" "estrn:Operador" "estrn:PosteParadaDeBus" "estrn:ZonaTarifaria" "estrn:ParadaDeMetro" "estrn:LineaBus" "naptan:MetroStopPoint" "naptan:MarkedBusStop" "naptan:Airport" "estrn:ParadaDeCercanias" "naptan:StopStatus" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "estrn:Intercambiador" "estrn:EstacionDeMetroLigero" "naptan:AirStopPoint" "-51e8048:163cf0abd11:-7ff1" "naptan:Station" "naptan:FerryStopPoint" "estrn:LineaMetro" "-51e8048:163cf0abd11:-7ff4" "naptan:RailStopPoint" "naptan:FerryTerminal" "naptan:BusStop" "naptan:StopPoint" "estrn:Linea" "estrn:LineaTren" "estrn:LineaMetroLigero" "naptan:CoachStopPoint" "estrn:Marquesina" "estrn:Darsena" "naptan:StopValidity" "naptan:StopArea" "estrn:ParadaDeMetroLigero" "estrn:EstacionDeCercanias" "naptan:Metro" "skos:Concept" "naptan:CoachStop" "estrn:EstacionDeMetro" "estrn:EstacionDeAutobus" "estrn:Operador" "estrn:PosteParadaDeBus" "estrn:ZonaTarifaria" "estrn:ParadaDeMetro" "estrn:LineaBus" "naptan:MetroStopPoint" "naptan:MarkedBusStop" "-51e8048:163cf0abd11:-7ffc" "naptan:Airport" "estrn:ParadaDeCercanias" "naptan:StopStatus" "-51e8048:163cf0abd11:-7ff7" ; /*classes style*/
 	"estrn:EstacionDeCercanias" -> "estrn:Intercambiador" [ label = "owl:disjointWith" ];
 	"estrn:EstacionDeCercanias" -> "estrn:EstacionDeMetroLigero" [ label = "owl:disjointWith" ];
 	"estrn:EstacionDeCercanias" -> "estrn:EstacionDeMetro" [ label = "owl:disjointWith" ];
@@ -36,28 +36,28 @@ node [shape = rectangle, color="orange"]; "4cfa7726:163ceff8b65:-7ff1" "estrn:In
 	"naptan:atcoCode" -> "skos:notation" [ label = "rdfs:subPropertyOf" ];
 	"naptan:stopAreaTypeCode" -> "skos:notation" [ label = "rdfs:subPropertyOf" ];
 	"naptan:tiplocRef" -> "skos:notation" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ff2" [ label = "rdf:rest" ];
 	"NULL" -> "estrn:Darsena" [ label = "rdf:first" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ffb" [ label = "owl:unionOf" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7fee" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ff3" [ label = "owl:unionOf" ];
 	"NULL" -> "estrn:ParadaDeCercanias" [ label = "rdf:first" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ff0" [ label = "owl:unionOf" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ff0" [ label = "owl:unionOf" ];
 	"NULL" -> "naptan:StopArea" [ label = "rdf:first" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ff6" [ label = "owl:unionOf" ];
 	"NULL" -> "estrn:ParadaDeMetro" [ label = "rdf:first" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnEstacion" [ label = "owl:hasValue" ];
 	"NULL" -> "naptan:StopPoint" [ label = "rdf:first" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ff9" [ label = "rdf:rest" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7fed" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7fee" [ label = "rdf:rest" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "estrn:ParadaDeMetroLigero" [ label = "rdf:first" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructura/transporte/tipoParada/ParadaEnViaPublica" [ label = "owl:hasValue" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ff2" [ label = "rdf:rest" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ff5" [ label = "rdf:rest" ];
 	"NULL" -> "estrn:tipoParada" [ label = "owl:onProperty" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ff8" [ label = "rdf:rest" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ff6" [ label = "owl:unionOf" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7ff3" [ label = "owl:unionOf" ];
-	"NULL" -> "4cfa7726:163ceff8b65:-7fef" [ label = "rdf:rest" ];
+	"NULL" -> "-51e8048:163cf0abd11:-7fed" [ label = "rdf:rest" ];
 	"naptan:busStopTypeCode" -> "skos:notation" [ label = "rdfs:subPropertyOf" ];
 	"naptan:plateCode" -> "skos:notation" [ label = "rdfs:subPropertyOf" ];
 	"estrn:LineaMetro" -> "estrn:LineaTren" [ label = "owl:disjointWith" ];
@@ -86,14 +86,14 @@ node [shape = rectangle, color="orange"]; "4cfa7726:163ceff8b65:-7ff1" "estrn:In
 	"naptan:StopPoint" -> "owl:Thing" [ label = "naptan:mainNptgLocality" ];
 	"naptan:NptgDistrict" -> "naptan:NptgDistrictCode" [ label = "naptan:nptgDistrictCode" ];
 	"estrn:Intercambiador" -> "xsd:int" [ label = "estrn:intercambiador" ];
-	"4cfa7726:163ceff8b65:-7ff7" -> "estrn:Linea" [ label = "estrn:linea" ];
+	"-51e8048:163cf0abd11:-7ff7" -> "estrn:Linea" [ label = "estrn:linea" ];
 	"naptan:AirStopPoint" -> "naptan:Airport" [ label = "naptan:airport" ];
 	"naptan:CoachStopPoint" -> "naptan:CoachStop" [ label = "naptan:coachStop" ];
 	"naptan:StopPoint" -> "xsd:boolean" [ label = "naptan:localityCentre" ];
 	"owl:Thing" -> "xsd:string" [ label = "estrn:tesela" ];
 	"naptan:StopPoint" -> "naptan:StopPoint" [ label = "naptan:replacement" ];
 	"owl:Thing" -> "estrn:Operador" [ label = "estrn:operador" ];
-	"4cfa7726:163ceff8b65:-7ff1" -> "naptan:StopArea" [ label = "estrn:paradaEnEstacion" ];
+	"-51e8048:163cf0abd11:-7ff1" -> "naptan:StopArea" [ label = "estrn:paradaEnEstacion" ];
 	"naptan:StopPoint" -> "naptan:NaptanCode" [ label = "naptan:naptanCode" ];
 	"naptan:Station" -> "naptan:CrsCode" [ label = "naptan:crsRef" ];
 	"naptan:StopPoint" -> "naptan:PlateCode" [ label = "naptan:plateCode" ];
@@ -108,8 +108,8 @@ node [shape = rectangle, color="orange"]; "4cfa7726:163ceff8b65:-7ff1" "estrn:In
 	"naptan:Airport" -> "naptan:IataCode" [ label = "naptan:iataRef" ];
 	"naptan:StopPoint" -> "owl:Thing" [ label = "naptan:suburb" ];
 	"naptan:MetroStopPoint" -> "naptan:Metro" [ label = "naptan:metro" ];
-	"estrn:Linea" -> "4cfa7726:163ceff8b65:-7ff4" [ label = "estrn:parada" ];
-	"naptan:StopArea" -> "4cfa7726:163ceff8b65:-7ffc" [ label = "estrn:estacionTieneParada" ];
+	"estrn:Linea" -> "-51e8048:163cf0abd11:-7ff4" [ label = "estrn:parada" ];
+	"naptan:StopArea" -> "-51e8048:163cf0abd11:-7ffc" [ label = "estrn:estacionTieneParada" ];
 	"naptan:StopPoint" -> "naptan:StopValidity" [ label = "naptan:stopValidity" ];
 	"owl:Thing" -> "estrn:ZonaTarifaria" [ label = "estrn:coronaTarifaria" ];
 	"rdfs:Class" -> "naptan:TimingStatusCode" [ label = "naptan:timingStatusCode" ];
