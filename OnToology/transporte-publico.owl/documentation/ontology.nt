@@ -18,7 +18,7 @@
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontolog\u00EDa sobre infraestructuras de transporte"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#label> "Transporte P\u00FAblico"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#priorVersion> "0.1"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#versionInfo> "En esta versi\u00F3n se han agregado las siguientes clases:\n- Operador \n- ZonaTarifaria\n\nAdem\u00E1s se incluyeron las siguientes propiedades:\n- operador \n- coronaTarifaria\n\nSe ha quitado de la descripci\u00F3n de la ontolog\u00EDa lo mencionado en la versi\u00F3n anterior en la que se mencionaba que se reutilizaba t\u00E9rminos de una ontolog\u00EDa sobre unidades territoriales."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#versionInfo> "En esta versi\u00F3n se han agregado las siguientes clases:\n- Operador \n- ZonaTarifaria\n\nAdem\u00E1s se incluyeron las siguientes propiedades:\n- operador \n- coronaTarifaria\n\nSe ha omitido de la descripci\u00F3n de la ontolog\u00EDa la parte en la que se mencionaba que se reutiliza t\u00E9rminos de una ontolog\u00EDa sobre unidades territoriales."@es .
 # 
 # 
 # #################################################################

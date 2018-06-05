@@ -34,7 +34,7 @@ Además se incluyeron las siguientes propiedades:
 - operador 
 - coronaTarifaria
 
-Se ha quitado de la descripción de la ontología lo mencionado en la versión anterior en la que se mencionaba que se reutilizaba términos de una ontología sobre unidades territoriales."""@es .
+Se ha omitido de la descripción de la ontología la parte en la que se mencionaba que se reutiliza términos de una ontología sobre unidades territoriales."""@es .
 
 #################################################################
 #    Annotation properties
