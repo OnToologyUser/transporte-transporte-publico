@@ -376,6 +376,9 @@
     "MetroStopPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/MetroStopPoint"
     },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
     "BusCoachStopPoint" : {
       "@id" : "http://transport.data.gov.uk/def/naptan/BusCoachStopPoint"
     },

@@ -13,12 +13,13 @@
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.owl"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/terms/issued> "2014-04-29"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/dc/terms/modified> "2018-06-04"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/vocab/vann/preferredNamespacePrefix> "estp" .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#" .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario se utiliza para la descripci\u00F3n del dominio de la infraestructura de los medios de transporte. Esta ontolog\u00EDa reutliza elementos de otras ontolog\u00EDas como la ontolog\u00EDa de transportes Naptan."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontolog\u00EDa sobre infraestructuras de transporte"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2000/01/rdf-schema#label> "Transporte P\u00FAblico"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#priorVersion> "0.1"@es .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#versionInfo> "En esta versi\u00F3n se han agregado las siguientes clases:\n- Operador \n- ZonaTarifaria\n\nAdem\u00E1s se incluyeron las siguientes propiedades:\n- operador \n- coronaTarifaria\n\nSe ha omitido de la descripci\u00F3n de la ontolog\u00EDa la parte en la que se mencionaba que se reutiliza t\u00E9rminos de una ontolog\u00EDa sobre unidades territoriales."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> <http://www.w3.org/2002/07/owl#versionInfo> "En esta versi\u00F3n se han agregado las siguientes clases:\n- Operador \n- ZonaTarifaria\n\nAdem\u00E1s se incluyeron las siguientes propiedades:\n- operador \n- coronaTarifaria\n\nSe ha omitido de la descripci\u00F3n de la ontolog\u00EDa la parte en la que se mencionaba la reutilizaci\u00F3n de t\u00E9rminos de una ontolog\u00EDa sobre unidades territoriales."@es .
 # 
 # 
 # #################################################################
@@ -48,6 +49,9 @@
 # 
 # http://purl.org/dc/terms/modified
 <http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://transport.data.gov.uk/def/naptan/administrativeAreaCode
 <http://transport.data.gov.uk/def/naptan/administrativeAreaCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -1332,7 +1336,6 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> .
-<http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> "Operador de los medios de transporte"@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#comment> "Operador de los medios de transporte."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador> <http://www.w3.org/2000/01/rdf-schema#label> "Operador"@es .
 # 

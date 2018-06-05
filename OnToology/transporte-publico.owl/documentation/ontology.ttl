@@ -21,6 +21,7 @@
                                                                                                                    "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.owl"@es ;
                                                                               <http://purl.org/dc/terms/issued> "2014-04-29"@es ;
                                                                               <http://purl.org/dc/terms/modified> "2018-06-04"^^xsd:dateTime ;
+                                                                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "estp"^^xsd:string ;
                                                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#"^^xsd:string ;
                                                                               rdfs:comment "Este vocabulario se utiliza para la descripción del dominio de la infraestructura de los medios de transporte. Esta ontología reutliza elementos de otras ontologías como la ontología de transportes Naptan."@es ,
                                                                                            "Ontología sobre infraestructuras de transporte"@es ;
@@ -34,7 +35,7 @@ Además se incluyeron las siguientes propiedades:
 - operador 
 - coronaTarifaria
 
-Se ha omitido de la descripción de la ontología la parte en la que se mencionaba que se reutiliza términos de una ontología sobre unidades territoriales."""@es .
+Se ha omitido de la descripción de la ontología la parte en la que se mencionaba la reutilización de términos de una ontología sobre unidades territoriales."""@es .
 
 #################################################################
 #    Annotation properties
@@ -66,6 +67,10 @@ Se ha omitido de la descripción de la ontología la parte en la que se menciona
 
 ###  http://purl.org/dc/terms/modified
 <http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
 
 ###  http://transport.data.gov.uk/def/naptan/administrativeAreaCode
@@ -1520,7 +1525,6 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#Operador
 :Operador rdf:type owl:Class ;
           rdfs:comment <http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico> ,
-                       "Operador de los medios de transporte"@es ,
                        "Operador de los medios de transporte."@es ;
           rdfs:label "Operador"@es .
 
