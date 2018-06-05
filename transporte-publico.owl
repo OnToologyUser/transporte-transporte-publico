@@ -26,8 +26,8 @@
         <dc:creator xml:lang="es">Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid, and LocaliData)</dc:creator>
         <rdfs:label xml:lang="es">Transporte Público</rdfs:label>
         <dcterms:issued xml:lang="es">2014-04-29</dcterms:issued>
-        <dc:creator xml:lang="es">Rodrigo Medrano Calderón (Escuela Técnica Superior de Ingenieros Informáticos)</dc:creator>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-04</dcterms:modified>
+        <dc:creator xml:lang="es">Rodrigo Medrano Calderón (Escuela Técnica Superior de Ingenieros Informáticos)</dc:creator>
         <owl:priorVersion xml:lang="es">0.1</owl:priorVersion>
         <vann:preferredNamespaceUri>http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico#</vann:preferredNamespaceUri>
         <dc:identifier xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico</dc:identifier>
@@ -36,9 +36,6 @@
         <dcterms:hasFormat xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/transporte/transporte-publico.html</dcterms:hasFormat>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-04-29</dc:date>
         <dc:title xml:lang="es">Vocabulario para la representación de datos de la infraestructura de medios de transporte</dc:title>
-        <dc:creator xml:lang="es">Luis Criado (CRTM)</dc:creator>
-        <dc:creator xml:lang="es">José María Díez (Ayuntamiento de Burgos)</dc:creator>
-        <rdfs:comment xml:lang="es">Este vocabulario se utiliza para la descripción del dominio de la infraestructura de los medios de transporte. Esta ontología reutliza elementos de otras ontologías como la ontología de transportes Naptan.</rdfs:comment>
         <owl:versionInfo xml:lang="es">En esta versión se han agregado las siguientes clases:
 - Operador 
 - ZonaTarifaria
@@ -47,7 +44,10 @@ Además se incluyeron las siguientes propiedades:
 - operador 
 - coronaTarifaria
 
-Se ha quitado de la descripción de la ontología lo mencionado en la versión anterior en la que se mencionaba que se reutilizaba términos de una ontología sobre unidades territoriales.</owl:versionInfo>
+Se ha omitido de la descripción de la ontología la parte en la que se mencionaba que se reutiliza términos de una ontología sobre unidades territoriales.</owl:versionInfo>
+        <dc:creator xml:lang="es">Luis Criado (CRTM)</dc:creator>
+        <rdfs:comment xml:lang="es">Este vocabulario se utiliza para la descripción del dominio de la infraestructura de los medios de transporte. Esta ontología reutliza elementos de otras ontologías como la ontología de transportes Naptan.</rdfs:comment>
+        <dc:creator xml:lang="es">José María Díez (Ayuntamiento de Burgos)</dc:creator>
     </owl:Ontology>
     
 
